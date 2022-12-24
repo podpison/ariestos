@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@mixin gradientText($gradient) {
+  background: $gradient;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+
+@layer base {
+  .gilroy {
+    font-family: gilroy;
+  }
+  .ginora {
+    font-family: ginora;
+  }
+  .linear-hover {
+    @apply transition-all;
+    background: transparent;
+    &:hover {
+      @include gradientText(linear-gradient(90deg, #7D9BFA 0%, #60DBD4 99.81%));
+    }
+  }
+  .linear-text {
+    @include gradientText(linear-gradient(90deg, #7D9BFA 0%, #60DBD4 99.81%));
+  }
+
+  html {
+    font-family: gilroy;
+    overflow-x: hidden;
+    h1, h2, h3, h4, h5, h6 {
+      font-family: ginora;
+    }
+  }
+  body {
+    @apply bg-[#353535] overflow-x-hidden
+  }
+  main {
+    @apply mt-28 px-5
+  }
+
+  h1, h2, h3, h4, h5 {
+    @apply font-bold leading-tight capitalize
+  }
+  h1 {
+    @apply text-[42px] sm:text-[52px] md:text-[62px] lg:text-[72px] xl:text-[82px] 
+  }
+  h2 {
+    @apply text-[36px] sm:text-[42px] md:text-[50px] lg:text-[56px] xl:text-[62px] 
+  }
+  h3 {
+    @apply text-[26px] sm:text-[30px] md:text-[34px] lg:text-[40px] xl:text-[44px] 
+  }
+  h4 {
+    @apply text-[20px] sm:text-[22px] md:text-[24px] lg:text-[25px] xl:text-[26px] 
+  }
+  h5 {
+    @apply text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] 
+  }
+  h6 {
+    @apply uppercase text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 
+  }
+  .hover {
+    @apply transition-all shadow-hover
+  }
+}
+
+@font-face {
+  font-family: gilroy;
+  src: url('./assets/font/gilroyRegular.woff');
+  font-weight: 400;
+}
+@font-face {
+  font-family: ginora;
+  src: url('./assets/font/ginoraRegular.otf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: ginora;
+  src: url('./assets/font/ginoraBold.otf');
+  font-weight: 600;
+}
+@font-face {
+  font-family: ginora;
+  src: url('./assets/font/ginoraSemiBold.otf');
+  font-weight: 700;
+}
