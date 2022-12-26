@@ -28,6 +28,9 @@ module.exports = {
       boxShadow: {
         'hover': '0px 0px 90px 20px rgba(0, 0, 0, 0.15)',
       },
+      screens: {
+        'mw': '1200px',
+      },
     },
   },
   plugins: [],

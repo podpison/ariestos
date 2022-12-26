@@ -1,12 +1,13 @@
 import { ArrowLink } from '../../ui/ArrowLink';
 import { BlurryDot } from '../../ui/BlurryDot';
+import { Spiral } from '../../ui/Spiral';
 import mainImg from './../../../assets/imgs/pages/main/program/main.webp';
 import smallImg from './../../../assets/imgs/pages/main/program/small.webp';
 import spiralImg from './../../../assets/imgs/pages/main/program/spiral.webp';
 
 export const Program: React.FC = () => {
   return <section className='relative mt-44 sm:mt-50 md:mt-56 lg:mt-64'>
-    <img className='absolute -bottom-[12%] -right-[20px] w-[100px]' src={spiralImg} alt='spiral' />
+    <Spiral className='-bottom-[12%] -right-[20px] w-[100px] mw:right-0' src={spiralImg} />
     <div className='relative'>
       <div className='relative w-[90%] mx-auto max-w-[900px]'>
         <BlurryDot className='top-0 -left-4' size='91' />

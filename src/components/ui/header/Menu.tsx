@@ -4,6 +4,7 @@ import logo from '../../../assets/imgs/ui/header/logo.svg';
 import spiralAndbluryCircle from '../../../assets/imgs/ui/header/spiralAndbluryCircle.webp';
 import cn from 'classnames';
 import { Separator } from '../Separator';
+import { Spiral } from '../Spiral';
 
 type Props = {
   open: boolean
@@ -54,7 +55,7 @@ export const Menu: React.FC<Props> = ({ open, onClose }) => {
           {SocialNetworks}
         </div>
       </div>
-      <img className='absolute bottom-0 -right-2 -z-10' src={spiralAndbluryCircle} alt='spiral and blury circle' />
+      <Spiral className='bottom-0 -right-2' src={spiralAndbluryCircle} alt='spiral and blury circle' />
     </div>
   </div>
 };

@@ -30,6 +30,7 @@
 
   html {
     font-family: gilroy;
+    overflow-x: hidden;
     h1, h2, h3, h4, h5, h6 {
       @apply text-primary-title;
       font-family: ginora;
@@ -39,10 +40,7 @@
     @apply bg-[#353535] overflow-x-hidden text-secondary-title
   }
   main {
-    @apply mt-28 px-5;
-    @media (min-width: 1200px) {
-      @apply px-0;
-    }
+    @apply mt-28 px-5 mw:px-0;
   }
 
   h1, h2, h3, h4, h5 {
@@ -58,13 +56,22 @@
     @apply text-[26px] sm:text-[34px] md:text-[38px] lg:text-[44px]
   }
   h4 {
-    @apply text-[20px] sm:text-[22px] md:text-[24px] lg:text-[26px]
+    @apply text-[20px] sm:text-[25px] md:text-[30px] lg:text-[36px]
   }
   h5 {
     @apply text-[14px] sm:text-[16px] md:text-[18px] lg:text-[22px]
   }
   h6 {
     @apply uppercase text-[12px] sm:text-[13px] md:text-[14px] lg:text-[16px]
+  }
+  .smallh1 {
+    @apply text-[42px] sm:text-[48px] md:text-[55px] lg:text-[62px]
+  }
+  .smallh3 {
+    @apply text-[26px]
+  }
+  .smallh4 {
+    @apply font-semibold text-[20px] sm:text-[22px] md:text-[22px] lg:text-[26px] 
   }
   .hover {
     @apply transition-all shadow-hover
