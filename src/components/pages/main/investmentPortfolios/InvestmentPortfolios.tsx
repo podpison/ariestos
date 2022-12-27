@@ -1,5 +1,5 @@
 import { Separator } from "../../../ui/Separator"
-import { LatestJobs } from "./LatestJobs";
+import { LatestJobs } from "./latestJobs/LatestJobs";
 import { Portfolio } from "./portfolio/Portfolio";
 import { PortfolioLogos } from "./PortfolioLogos";
 import { useStaticItems } from './../../../../hooks/useStaticItems';

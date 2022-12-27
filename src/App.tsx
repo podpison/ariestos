@@ -8,7 +8,6 @@ function App() {
     <Header />
     <Routes>
       <Route path='/' element={<MainPage />} />
-      <Route path='/:portfolio' element={<MainPage />} />
       {/* <Route path='*' element={<NotFoundPage />} /> */}
     </Routes>
   </div>

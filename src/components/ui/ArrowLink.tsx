@@ -6,10 +6,20 @@ type Props = {
   to: string
   children: React.ReactNode
   className?: string
+  primary?: boolean
 }
 
-export const ArrowLink: React.FC<Props> = ({ to, children, className }) => {
-  return <Link className={cn("flex items-center gap-x-3 text-primary uppercase", className)} to={to}>
+export const ArrowLink: React.FC<Props> = ({ to, children, className, primary = true }) => {
+  return <Link
+    className={
+      cn(
+        "flex items-center gap-x-3 uppercase transition-all",
+        className,
+        primary && 'text-primary'
+      )
+    }
+    to={to}
+  >
     {children}
     <img src={arrowRightImg} alt='arrow right' />
   </Link>
