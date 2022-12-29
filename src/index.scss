@@ -2,14 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@mixin gradientText($gradient) {
-  background: $gradient;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
-}
-
 @mixin h6Rules {
   @apply text-sub-title uppercase text-[12px] sm:text-[13px] md:text-[14px] lg:text-[16px]
 }
@@ -21,15 +13,11 @@
   .ginora {
     font-family: ginora;
   }
-  .linear-hover {
+  .hoverPrimaryColorImg {
     @apply transition-all;
-    background: transparent;
     &:hover {
-      @include gradientText(linear-gradient(90deg, #7D9BFA 0%, #60DBD4 99.81%));
+      filter: invert(47%) sepia(14%) saturate(1462%) hue-rotate(195deg) brightness(115%) contrast(147%);
     }
-  }
-  .linear-text {
-    @include gradientText(linear-gradient(90deg, #7D9BFA 0%, #60DBD4 99.81%));
   }
 
   html {
@@ -79,6 +67,9 @@
   }
   .hover {
     @apply transition-all shadow-hover
+  }
+  .mt100to200 {
+    @apply mt-24 sm:mt-32 md:mt-40 lg:mt-[200px]
   }
 }
 

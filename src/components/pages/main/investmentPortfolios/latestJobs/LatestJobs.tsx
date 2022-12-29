@@ -4,13 +4,21 @@ import { Categories } from './categories/Categories';
 import { useSearchParam } from './../../../../../hooks/useSearchParam';
 import { Job } from './Job';
 import { ArrowLink } from '../../../../ui/ArrowLink';
+import { useSearchParamReplacer } from './../../../../../hooks/useSearchParamReplacer';
+
+const itemsPerPortion = 3
 
 export const LatestJobs: React.FC = () => {
   let jobs = useSelector(selectJobItems);
   let [ currentCategory, currentPortion ] = useSearchParam(['jobCategory', 'jobPortion']);
+  const searchParamReplacer = useSearchParamReplacer();
 
   let categoryJobs = jobs.filter(i => i.category === (currentCategory || jobs[0].category));
-  let Jobs = categoryJobs.map((j, index) => <Job {...j} isLast={categoryJobs.length - 1 === index} key={index} />);
+  let numberCurrentPortion = Number(currentPortion) || 1;
+  let jobsPortion = categoryJobs.slice((numberCurrentPortion - 1) * itemsPerPortion, numberCurrentPortion * itemsPerPortion)
+
+  let Jobs = jobsPortion.map((j, index) => <Job {...j} isLast={categoryJobs.length - 1 === index} key={index} />);
+  let isMaxPortion = numberCurrentPortion === Math.floor(categoryJobs.length / itemsPerPortion);;
 
   return <div className="mt-24 sm:mt-32 md:mt-40 lg:mt-[200px]">
     <h1 className='smallh1'>Latest portfolio jobs.</h1>
@@ -19,8 +27,8 @@ export const LatestJobs: React.FC = () => {
       <div className='max-md:mt-12 md:row-[1]'>{Jobs}</div>
     </div>
     <div>
-      <ArrowLink to={`?jobPortion=${currentPortion || 0 + 1}`}>Next jobs</ArrowLink>
-      {currentPortion || 0 !== 0 && <ArrowLink to={`?jobPortion=${currentPortion || 0 - 1}`}>Previous jobs</ArrowLink>}
+      {!isMaxPortion && <ArrowLink to={searchParamReplacer(`?jobPortion=${(numberCurrentPortion || 0) + 1}`)}>Next jobs</ArrowLink>}
+      {(numberCurrentPortion || 0) !== 0 && <ArrowLink to={searchParamReplacer(`?jobPortion=${(numberCurrentPortion || 0) - 1}`)}>Previous jobs</ArrowLink>}
     </div>
   </div>
 };

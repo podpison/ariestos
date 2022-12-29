@@ -45,6 +45,7 @@ export type JobType = {
   keyWords: string[]
   category: string
   publishDate: string
+  applicationsCount: number
   location: string
   skills: {
     experience: string
@@ -68,6 +69,7 @@ const biba = [
     keyWords: ['Internship', 'Paris @agronavo', 'marketing'],
     category: 'Human Resources',
     publishDate: 'Dec 27 2022',
+    applicationsCount: 72,
     location: 'Silicon valley - California, USA',
     skills: {
       experience: 'Minimum 1 year',
@@ -106,6 +108,7 @@ const biba = [
     keyWords: ['full time', 'remote', 'business develepoment'],
     category: 'Human Resources',
     publishDate: 'Dec 27 2022',
+    applicationsCount: 72,
     location: 'Silicon valley - California, USA',
     skills: {
       experience: 'Minimum 1 year',
@@ -140,6 +143,7 @@ const biba = [
   {
     id: 2,
 
+    applicationsCount: 72,
     portfolio: 'Ordix',
     name: 'Software Developer - Robot Systems.',
     keyWords: ['Internship', 'Paris @agronavo', 'marketing'],
@@ -179,6 +183,7 @@ const biba = [
 
   {
     id: 3,
+    applicationsCount: 72,
 
     portfolio: 'Kawaski',
     name: 'Sales intern - right hand to the COO.',
@@ -218,6 +223,7 @@ const biba = [
   },
   {
     id: 4,
+    applicationsCount: 72,
 
     portfolio: 'Cypher',
     name: 'head of growth - medical device startup',
@@ -257,6 +263,7 @@ const biba = [
   },
   {
     id: 5,
+    applicationsCount: 72,
 
     portfolio: 'Ordix',
     name: 'Software Developer - Robot Systems.',
@@ -297,6 +304,7 @@ const biba = [
 
   {
     id: 6,
+    applicationsCount: 72,
 
     portfolio: 'Kawaski',
     name: 'Sales intern - right hand to the COO.',
@@ -336,6 +344,7 @@ const biba = [
   },
   {
     id: 7,
+    applicationsCount: 72,
 
     portfolio: 'Cypher',
     name: 'head of growth - medical device startup',
@@ -375,6 +384,7 @@ const biba = [
   },
   {
     id: 8,
+    applicationsCount: 72,
 
     portfolio: 'Ordix',
     name: 'Software Developer - Robot Systems.',
@@ -415,6 +425,7 @@ const biba = [
 
   {
     id: 9,
+    applicationsCount: 72,
 
     portfolio: 'Kawaski',
     name: 'Sales intern - right hand to the COO.',
@@ -454,12 +465,13 @@ const biba = [
   },
   {
     id: 10,
+    applicationsCount: 1,
 
     portfolio: 'Cypher',
     name: 'head of growth - medical device startup',
     keyWords: ['full time', 'remote', 'business develepoment'],
     category: 'Operations',
-    publishDate: 'Dec 27 2022',
+    publishDate: 'dec 28 2022',
     location: 'Silicon valley - California, USA',
     skills: {
       experience: 'Minimum 1 year',
@@ -494,6 +506,7 @@ const biba = [
   {
     id: 11,
 
+    applicationsCount: 72,
     portfolio: 'Ordix',
     name: 'Software Developer - Robot Systems.',
     keyWords: ['Internship', 'Paris @agronavo', 'marketing'],
@@ -533,6 +546,7 @@ const biba = [
 
   {
     id: 12,
+    applicationsCount: 72,
 
     portfolio: 'Kawaski',
     name: 'Sales intern - right hand to the COO.',
@@ -572,6 +586,7 @@ const biba = [
   },
   {
     id: 13,
+    applicationsCount: 72,
 
     portfolio: 'Cypher',
     name: 'head of growth - medical device startup',
@@ -611,6 +626,7 @@ const biba = [
   },
   {
     id: 14,
+    applicationsCount: 72,
 
     portfolio: 'Ordix',
     name: 'Software Developer - Robot Systems.',
@@ -651,6 +667,7 @@ const biba = [
 
   {
     id: 15,
+    applicationsCount: 72,
 
     portfolio: 'Kawaski',
     name: 'Sales intern - right hand to the COO.',
@@ -690,6 +707,7 @@ const biba = [
   },
   {
     id: 16,
+    applicationsCount: 72,
 
     portfolio: 'Cypher',
     name: 'head of growth - medical device startup',
@@ -729,6 +747,7 @@ const biba = [
   },
   {
     id: 17,
+    applicationsCount: 72,
 
     portfolio: 'Ordix',
     name: 'Software Developer - Robot Systems.',
@@ -769,6 +788,7 @@ const biba = [
 
   {
     id: 18,
+    applicationsCount: 72,
 
     portfolio: 'Kawaski',
     name: 'Sales intern - right hand to the COO.',
@@ -808,6 +828,7 @@ const biba = [
   },
   {
     id: 19,
+    applicationsCount: 72,
 
     portfolio: 'Cypher',
     name: 'head of growth - medical device startup',
@@ -847,6 +868,7 @@ const biba = [
   },
   {
     id: 20,
+    applicationsCount: 72,
 
     portfolio: 'Ordix',
     name: 'Software Developer - Robot Systems.',

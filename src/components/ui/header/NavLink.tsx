@@ -8,7 +8,10 @@ type Props = {
 }
 
 export const NavLink: React.FC<Props> = ({ to, className, children }) => {
-  return <RRDNavLink className={cn('ginora', className)} to={to}>
+  return <RRDNavLink
+    className={({ isActive }) => cn('ginora transition-colors hover:text-primary', isActive ? className?.split(' ').filter(r => !r.includes('text')).join(' ') : className, isActive && 'text-primary')}
+    to={to}
+  >
     {children ? children : to}
   </RRDNavLink>
 };

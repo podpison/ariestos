@@ -20,10 +20,12 @@ export const Header: React.FC = () => {
       '
     >
       {Links.slice(0, 2)}
-      <img className='max-w-[100px] sm:max-w-[110px] md:max-w-[140px] md:mx-auto' src={logo} alt='logo' />
+      <NavLink to='/'>
+        <img className='max-w-[100px] sm:max-w-[110px] md:max-w-[140px] md:mx-auto' src={logo} alt='logo' />
+      </NavLink>
       {Links.slice(2)}
       <div className='flex items-center gap-2 cursor-pointer' onClick={handleMenuStatus}>
-        <p className='ginora text-primary-title uppercase max-md:hidden'>Menu</p>
+        <p className='ginora text-primary-title uppercase transition-colors hover:text-primary max-md:hidden'>Menu</p>
         <img className='w-5 md:w-3' src={menuIcon} alt='menu' />
       </div>
       <Menu open={isMenuOpen} onClose={handleMenuStatus} />
