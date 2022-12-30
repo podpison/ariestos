@@ -1,9 +1,9 @@
 import { Separator } from "../../../ui/Separator"
-import { LatestJobs } from "./latestJobs/LatestJobs";
 import { Portfolio } from "./portfolio/Portfolio";
 import { PortfolioLogos } from "./PortfolioLogos";
 import { useStaticItems } from './../../../../hooks/useStaticItems';
 import './investmentPortfolios.scss';
+import { LatestJobs } from "../../../ui/latestJobs/LatestJobs";
 
 export const InvestmentPortfolios: React.FC = () => {
   useStaticItems('investmentPortfolios')

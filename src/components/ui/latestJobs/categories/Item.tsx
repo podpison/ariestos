@@ -1,13 +1,13 @@
-import { ArrowLink } from './../../../../../ui/ArrowLink';
 import cn from 'classnames';
-import { useSearchParam } from '../../../../../../hooks/useSearchParam';
-import { useSearchParamReplacer } from '../../../../../../hooks/useSearchParamReplacer';
+import { useSearchParam } from '../../../../hooks/useSearchParam';
+import { ArrowLink } from '../../ArrowLink';
+import { useSearchParamReplacer } from './../../../../hooks/useSearchParamReplacer';
 
 type Props = {
   name: string
 }
 
-export const Category: React.FC<Props> = ({ name }) => {
+export const Item: React.FC<Props> = ({ name }) => {
   let [ currentCategory ] = useSearchParam('jobCategory')
   const searchParamReplacer = useSearchParamReplacer();
 

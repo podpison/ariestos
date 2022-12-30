@@ -20,8 +20,8 @@ export const Header: React.FC = () => {
       '
     >
       {Links.slice(0, 2)}
-      <NavLink to='/'>
-        <img className='max-w-[100px] sm:max-w-[110px] md:max-w-[140px] md:mx-auto' src={logo} alt='logo' />
+      <NavLink className='max-w-[100px] sm:max-w-[110px] md:max-w-[140px] md:mx-auto' to='/'>
+        <img className='w-full' src={logo} alt='logo' />
       </NavLink>
       {Links.slice(2)}
       <div className='flex items-center gap-2 cursor-pointer' onClick={handleMenuStatus}>

@@ -2,9 +2,11 @@ import { useParams } from "react-router-dom";
 import { selectJobItems } from './../../../redux/selectors';
 import { useSelector } from 'react-redux';
 import { Hero } from "./Hero";
-import { Content } from "./Content";
+import { Content } from "./content/Content";
+import { useScrollTop } from "../../../hooks/useScrollTop";
 
 export const JobPage: React.FC = () => {
+  useScrollTop();
   let { id } = useParams();
   let jobs = useSelector(selectJobItems);
 

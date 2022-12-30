@@ -21,6 +21,7 @@ module.exports = {
         'secondary': '#5CE4CF',
         'shape': '#232526',
         'wireframe': '#7E868C',
+        'error': 'rgb(244 63 94)', //rose-500
         'angular-gradient': 'conic-gradient(from 180deg at 50% 50%, #66FFE6 -160.13deg, #8093FF 42.37deg, #66FFE6 199.87deg, #8093FF 402.37deg)',
         'linear-gradient': 'linear-gradient(90deg, rgba(128, 147, 255, 0) 0%, #7D9BFA 21.14%, #60DBD4 78.8%, rgba(92, 228, 207, 0) 100%)',
         'linear-full': 'linear-gradient(90deg, #7D9BFA 0%, #60DBD4 99.81%)',

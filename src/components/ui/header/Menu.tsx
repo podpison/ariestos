@@ -48,12 +48,12 @@ export const Menu: React.FC<Props> = ({ open, onClose }) => {
       <Separator className='h-[1px] w-full left-0 md:top-0 md:left-auto md:h-full md:w-[1px]' />
       <div className='relative flex flex-col items-center'>
         <div className='flex flex-col gap-y-5 sm:gap-y-8 md:gap-y-10 md:w-[350px] lg:gap-y-14'>
-          <NavLink className='w-80 mx-auto' to='/'>
+          <NavLink className='w-full max-w-[20em] mx-auto' to='/'>
             <img className='w-full' src={logo} alt='logo' />
           </NavLink>
           <p className='text-center'>Aries is a AI Reasearch center funding a lot of researches and claiming, showing how AI will change the world. They are showcasing researches and writting regularly about the consequnces happening on AI.</p>
         </div>
-        <div className='flex flex-wrap mt-5 gap-x-3 sm:gap-x-5 md:gap-x-7 md:mt-auto lg:mb-[.6rem]'>
+        <div className='flex mt-5 gap-x-3 sm:gap-x-5 md:gap-x-7 md:mt-auto lg:mb-[.6rem]'>
           {SocialNetworks}
         </div>
       </div>

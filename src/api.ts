@@ -1,5 +1,6 @@
 import { initializeApp } from "firebase/app";
 import { addDoc, collection, collection as fbCollection, getDocs, getFirestore } from "firebase/firestore";
+import { ContactUsFormValuesType } from "./components/ui/contactUs/form/Form";
 // import { ContactUsFormValuesType } from "./components/pages/contactUs/ContactUsForm/ContactUsForm";
 
 const firebaseConfig = {
@@ -23,12 +24,12 @@ export const itemsAPI = {
   },
 };
 
-// export const customersAPI = {
-//   add: async (data: ContactUsFormValuesType) => {
-//     const docRef = await addDoc(collection(fs, "contactUs"), data);
-//     return !!docRef;
-//   }
-// }
+export const customersAPI = {
+  add: async (data: ContactUsFormValuesType) => {
+    const docRef = await addDoc(collection(fs, "contactUs"), data);
+    return !!docRef;
+  }
+}
 
 export const addAPI = {
   add: async (collectionName: string, data: any[]) => {
