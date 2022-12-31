@@ -1,6 +1,6 @@
 import { InvestmentPortfolioType } from '../../../../../redux/reducers/static';
 import { ArrowLink } from './../../../../ui/ArrowLink';
-import spiralImg from './../../../../../assets/imgs/pages/main/investmentPortfolios/spiral.webp';
+import spiralImg from './../../../../../assets/imgs/pages/main/investmentPortfolio/spiral.webp';
 import { Spiral } from '../../../../ui/Spiral';
 
 type Props = {

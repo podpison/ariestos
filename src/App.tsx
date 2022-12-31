@@ -4,10 +4,17 @@ import { Routes, Route } from 'react-router-dom'
 import { JobPage } from "./components/pages/job/JobPage";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Footer } from "./components/ui/Footer";
+import { NotFoundPage } from "./components/pages/NotFoundPage";
+import { ProgramPage } from "./components/pages/program/ProgramPage";
+import { useStaticItems } from './hooks/useStaticItems';
+import { JobsPage } from "./components/pages/JobsPage";
+import { TermsAndConditionPage } from './components/pages/terms&condition/TermsAndConditionPage';
 
 function App() {
+  useStaticItems('jobs');
 
-  return <div className="relative h-[1000vh] container max-w-[1160px]">
+  return <div className="relative container flex flex-col h-full max-w-[1160px]">
     <ToastContainer 
       position="bottom-right"
       hideProgressBar={false}
@@ -15,9 +22,13 @@ function App() {
     <Header />
     <Routes>
       <Route path='/' element={<MainPage />} />
-      <Route path='/job/:id' element={<JobPage />} />
-      {/* <Route path='*' element={<NotFoundPage />} /> */}
+      <Route path='/jobs' element={<JobsPage />} />
+      <Route path='/jobs/:id' element={<JobPage />} />
+      <Route path='/program/:id' element={<ProgramPage />} />
+      <Route path='/terms&condition' element={<TermsAndConditionPage />} />
+      <Route path='*' element={<NotFoundPage />} />
     </Routes>
+    <Footer />
   </div>
 }
 

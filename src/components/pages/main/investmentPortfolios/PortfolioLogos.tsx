@@ -11,7 +11,7 @@ export const PortfolioLogos: React.FC = () => {
   let [portfolioSearch] = useSearchParam('portfolio');
 
   let Logos = items.map((i, index) => {
-    return <Link className={cn("investment-portfolios__logo_hover flex items-center gap-2 mx-auto", portfolioSearch === i.name && 'investment-portfolios__logo')} to={searchParamReplacer(`?portfolio=${i.name}`)} key={index}>
+    return <Link className={cn("primaryHoverWithImg flex items-center gap-2 mx-auto", portfolioSearch === i.name && 'investment-portfolios__logo')} to={searchParamReplacer(`?portfolio=${i.name}`)} key={index}>
       <img className="w-[25px] transition-all sm:w-[30px] md:w-[36px]" src={i.icon} alt={`${i.name}\`s icon`} />
       <h4 className="text-secondary-title transition-colors" key={index}>{i.name}</h4>
     </Link>

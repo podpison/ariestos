@@ -7,7 +7,7 @@ type Props = {
 
 export const Categories: React.FC<Props> = ({ jobs }) => {
   let uniqueCategories = jobs.filter((value, index, self) => index === self.findIndex((i) => i.category === value.category)).map(i => i.category);
-  let JobCategories = uniqueCategories.map((c, index) => <Item name={c} key={index} />);
+  let JobCategories = uniqueCategories.map((c, index) => <Item name={c} isFirst={index === 0} key={index} />);
 
   return <div className="max-md:px-6 md:col-[2] md:mt-4">
     <h3 className="smallh3">Job categories</h3>

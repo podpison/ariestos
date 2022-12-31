@@ -42,11 +42,17 @@
       font-family: ginora;
     }
   }
+  html, body, #root {
+    @apply h-full
+  }
   body {
     @apply bg-[#353535] overflow-x-hidden text-secondary-title
   }
+  main, footer {
+    @apply px-5 mw:px-0;
+  }
   main {
-    @apply mt-28 px-5 mw:px-0;
+    @apply mt-[100px] flex-1
   }
 
   h1, h2, h3, h4, h5 {
@@ -79,8 +85,18 @@
   .smallh4 {
     @apply font-semibold text-[20px] sm:text-[22px] md:text-[22px] lg:text-[26px] 
   }
-  .hover {
-    @apply transition-all shadow-hover
+  .primary-hover {
+    @apply transition-all hover:text-primary
+  }
+  .primaryHoverWithImg {
+    &:hover {
+      img {
+        filter: invert(47%) sepia(14%) saturate(1462%) hue-rotate(195deg) brightness(115%) contrast(147%);
+      }
+      * {
+        @apply text-primary;
+      }
+    }
   }
   .mt100to200 {
     @apply mt-24 sm:mt-32 md:mt-40 lg:mt-[200px]

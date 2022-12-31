@@ -2,6 +2,9 @@ import { useEffect } from 'react';
 
 export const useScrollTop = () => {
   useEffect(() => {
-    window.scrollTo(0, 0);
+    document.querySelector('body')?.scroll({
+      top: 0,
+      behavior: 'smooth'
+    })
   }, []);
 }

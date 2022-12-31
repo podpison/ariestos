@@ -5,6 +5,7 @@ import { useSearchParamReplacer } from './../../../hooks/useSearchParamReplacer'
 import { Categories } from './categories/Categories';
 import { Job } from './Job';
 import { ArrowLink } from './../ArrowLink';
+import { useCurrentJob } from '../../../hooks/useCurrentJob';
 
 type Props = {
   itemsPerPortion?: number
@@ -14,13 +15,14 @@ export const LatestJobs: React.FC<Props> = ({ itemsPerPortion = 3 }) => {
   let jobs = useSelector(selectJobItems);
   let [currentCategory, currentPortion] = useSearchParam(['jobCategory', 'jobPortion']);
   const searchParamReplacer = useSearchParamReplacer();
+  let currentJob = useCurrentJob();
 
-  let categoryJobs = jobs.filter(i => i.category === (currentCategory || jobs[0].category));
+  let categoryJobs = jobs.filter(i => (i.category === (currentCategory || jobs[0].category)) && i.id !== currentJob?.id);
   let numberCurrentPortion = Number(currentPortion) || 1;
   let jobsPortion = categoryJobs.slice((numberCurrentPortion - 1) * itemsPerPortion, numberCurrentPortion * itemsPerPortion)
+  let isMaxPortion = numberCurrentPortion === Math.ceil(categoryJobs.length / itemsPerPortion);
 
   let Jobs = jobsPortion.map((j, index) => <Job {...j} isLast={jobsPortion.length - 1 === index} key={index} />);
-  let isMaxPortion = numberCurrentPortion === Math.floor(categoryJobs.length / itemsPerPortion);
 
   return <div className="mt-24 sm:mt-32 md:mt-40 lg:mt-[200px]">
     <h1 className='smallh1'>Latest portfolio jobs.</h1>

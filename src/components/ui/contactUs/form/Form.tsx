@@ -32,7 +32,7 @@ export const Form: React.FC = () => {
       
       if (resp) {
         resetForm();
-        toast.success('Success! We will contact us soon.', {
+        toast.success('Success! We will contact you soon.', {
 
         })
       } else {

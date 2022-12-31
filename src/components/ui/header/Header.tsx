@@ -1,8 +1,8 @@
 import menuIcon from '../../../assets/imgs/ui/header/menu.svg';
 import logo from '../../../assets/imgs/ui/header/logo.svg';
-import { NavLink } from './NavLink';
 import { useState } from 'react';
 import { Menu } from './Menu';
+import { NavLink } from '../NavLink';
 
 const links = ['program', 'funding', 'jobs']
 
@@ -12,7 +12,7 @@ export const Header: React.FC = () => {
 
   const Links = links.map((l, index) => <NavLink className='uppercase text-primary-title max-md:hidden' to={l} key={index} />)
 
-  return <header className='h-[104px] md:h-[112px]'>
+  return <header className='min-h-[104px] md:min-h-[112px]'>
     <div
       className='container max-w-[1160px] z-40
         fixed top-0 flex justify-between items-center bg-secondary-dark py-9 px-5

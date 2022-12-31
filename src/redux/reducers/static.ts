@@ -61,1701 +61,190 @@ export type JobType = {
   }
 }
 
-const biba = [
+export type TermsAndConditionItemCategoryType = {
+  heading: string
+  text: string[]
+}
+
+export type TermsAndConditionItemType = {
+  section: string
+  content: TermsAndConditionItemCategoryType[]
+}
+const boba = [
   {
-    id: 0,
-    portfolio: 'Kawaski',
-    name: 'Sales intern - right hand to the COO.',
-    keyWords: ['Internship', 'Paris @agronavo', 'marketing'],
-    category: 'Human Resources',
-    publishDate: 'Dec 27 2022',
-    applicationsCount: 72,
-    location: 'Silicon valley - California, USA',
-    skills: {
-      experience: 'Minimum 1 year',
-      workLevel: 'Senior level',
-      employeeType: 'Full time job',
-      offerSalary: 2750
-    },
-    description: {
-      overview: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.'
-      ],
-      jobDescription: [
-        'We are now looking for our Head of Growth.',
-        'This position is for you, if you: are excited to bring a new treatments to the world for diseases that affect billions of people worldwide. want to work in the intersection of medical technology, digital health, hardware, psychology and artificial intelligence.',
-        'have a strong passion and integrity for what you do and want to challenge the way we treat mental health problems today. enjoy being one of the first employees in a startup with truly global potential and ambitions, and be a part of shaping the culture and future of the company. are a natural leader that will scale with the organisation as it grows.'
-      ],
-      responsibilities: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-      ],
-      skills: [
-        'creative',
-        'integrity',
-        'intellectual breadth',
-        'ability to admin when wrong',
-        'ability to work in a diverse team',
-        'sense of humor',
-        'emotional openness'
-      ]
-    },
+    section: 'Introduction.',
+    content: [
+      {
+        heading: 'General',
+        text: [
+          'We may collect your personal data from direct and indirect interactions with you to provide our services as agreed by you or to fulfill our contractual obligations with you.',
+          'In this regard we may gather personal data that may include your:',
+          'Name, address, nationality, email address, telephone number, bank account details, job title, name of employer, bank account details, tax ID or your national insurance number, forms of identification.',
+          'We may use this information to:',
+          'Set up meetings with you, maintain a record of your contacts, respond to your enquiries and fulfill your requests, assist you with your transactions or provide you with investor related services.',
+          'The use and processing of your personal data is necessary for our legitimate interests in providing our services, carrying out of administrative duties, the running of our business and in order to make or advise on investment decisions.'
+        ],
+      },
+      {
+        heading: 'Communications And Correspondence',
+        text: [
+          'In the course of communications or correspondence with you we may need to collect your personal data in order to develop our services and offerings and inform our marketing strategy.',
+          'providing our services, administrative purposes, making or advising on investment decisions, performance of contractual relationships, to comply with relevant regulations and laws, tax and compliance obligations including anti money laundering regulations and criminal background checks.',
+          'running our business, administrative purposes, to enable performance of contractual relations, allow us to progress your potential employment or internship job career.'
+        ],
+      },
+    ]
   },
   {
-    id: 1,
-    portfolio: 'Cypher',
-    name: 'head of growth - medical device startup',
-    keyWords: ['full time', 'remote', 'business develepoment'],
-    category: 'Human Resources',
-    publishDate: 'Dec 27 2022',
-    applicationsCount: 72,
-    location: 'Silicon valley - California, USA',
-    skills: {
-      experience: 'Minimum 1 year',
-      workLevel: 'Senior level',
-      employeeType: 'Full time job',
-      offerSalary: 2750
-    },
-    description: {
-      overview: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.'
-      ],
-      jobDescription: [
-        'We are now looking for our Head of Growth.',
-        'This position is for you, if you: are excited to bring a new treatments to the world for diseases that affect billions of people worldwide. want to work in the intersection of medical technology, digital health, hardware, psychology and artificial intelligence.',
-        'have a strong passion and integrity for what you do and want to challenge the way we treat mental health problems today. enjoy being one of the first employees in a startup with truly global potential and ambitions, and be a part of shaping the culture and future of the company. are a natural leader that will scale with the organisation as it grows.'
-      ],
-      responsibilities: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-      ],
-      skills: [
-        'creative',
-        'integrity',
-        'intellectual breadth',
-        'ability to admin when wrong',
-        'ability to work in a diverse team',
-        'sense of humor',
-        'emotional openness'
-      ]
-    },
+    section: 'Pixirhy Services.',
+    content: [
+      {
+        heading: 'General',
+        text: [
+          'We may collect your personal data from direct and indirect interactions with you to provide our services as agreed by you or to fulfill our contractual obligations with you.',
+          'In this regard we may gather personal data that may include your:',
+          'Name, address, nationality, email address, telephone number, bank account details, job title, name of employer, bank account details, tax ID or your national insurance number, forms of identification.',
+          'We may use this information to:',
+          'Set up meetings with you, maintain a record of your contacts, respond to your enquiries and fulfill your requests, assist you with your transactions or provide you with investor related services.',
+          'The use and processing of your personal data is necessary for our legitimate interests in providing our services, carrying out of administrative duties, the running of our business and in order to make or advise on investment decisions.'
+        ],
+      },
+      {
+        heading: 'Communications And Correspondence',
+        text: [
+          'In the course of communications or correspondence with you we may need to collect your personal data in order to develop our services and offerings and inform our marketing strategy.',
+          'providing our services, administrative purposes, making or advising on investment decisions, performance of contractual relationships, to comply with relevant regulations and laws, tax and compliance obligations including anti money laundering regulations and criminal background checks.',
+          'running our business, administrative purposes, to enable performance of contractual relations, allow us to progress your potential employment or internship job career.'
+        ],
+      },
+    ]
   },
   {
-    id: 2,
-
-    applicationsCount: 72,
-    portfolio: 'Ordix',
-    name: 'Software Developer - Robot Systems.',
-    keyWords: ['Internship', 'Paris @agronavo', 'marketing'],
-    category: 'Human Resources',
-    publishDate: 'Dec 27 2022',
-    location: 'Silicon valley - California, USA',
-    skills: {
-      experience: 'Minimum 1 year',
-      workLevel: 'Senior level',
-      employeeType: 'Full time job',
-      offerSalary: 2750
-    },
-    description: {
-      overview: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.'
-      ],
-      jobDescription: [
-        'We are now looking for our Head of Growth.',
-        'This position is for you, if you: are excited to bring a new treatments to the world for diseases that affect billions of people worldwide. want to work in the intersection of medical technology, digital health, hardware, psychology and artificial intelligence.',
-        'have a strong passion and integrity for what you do and want to challenge the way we treat mental health problems today. enjoy being one of the first employees in a startup with truly global potential and ambitions, and be a part of shaping the culture and future of the company. are a natural leader that will scale with the organisation as it grows.'
-      ],
-      responsibilities: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-      ],
-      skills: [
-        'creative',
-        'integrity',
-        'intellectual breadth',
-        'ability to admin when wrong',
-        'ability to work in a diverse team',
-        'sense of humor',
-        'emotional openness'
-      ]
-    },
-  },
-
-  {
-    id: 3,
-    applicationsCount: 72,
-
-    portfolio: 'Kawaski',
-    name: 'Sales intern - right hand to the COO.',
-    keyWords: ['Internship', 'Paris @agronavo', 'marketing'],
-    category: 'Data Science',
-    publishDate: 'Dec 27 2022',
-    location: 'Silicon valley - California, USA',
-    skills: {
-      experience: 'Minimum 1 year',
-      workLevel: 'Senior level',
-      employeeType: 'Full time job',
-      offerSalary: 2750
-    },
-    description: {
-      overview: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.'
-      ],
-      jobDescription: [
-        'We are now looking for our Head of Growth.',
-        'This position is for you, if you: are excited to bring a new treatments to the world for diseases that affect billions of people worldwide. want to work in the intersection of medical technology, digital health, hardware, psychology and artificial intelligence.',
-        'have a strong passion and integrity for what you do and want to challenge the way we treat mental health problems today. enjoy being one of the first employees in a startup with truly global potential and ambitions, and be a part of shaping the culture and future of the company. are a natural leader that will scale with the organisation as it grows.'
-      ],
-      responsibilities: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-      ],
-      skills: [
-        'creative',
-        'integrity',
-        'intellectual breadth',
-        'ability to admin when wrong',
-        'ability to work in a diverse team',
-        'sense of humor',
-        'emotional openness'
-      ]
-    },
+    section: 'What personal data do we collect and why.',
+    content: [
+      {
+        heading: 'General',
+        text: [
+          'We may collect your personal data from direct and indirect interactions with you to provide our services as agreed by you or to fulfill our contractual obligations with you.',
+          'In this regard we may gather personal data that may include your:',
+          'Name, address, nationality, email address, telephone number, bank account details, job title, name of employer, bank account details, tax ID or your national insurance number, forms of identification.',
+          'We may use this information to:',
+          'Set up meetings with you, maintain a record of your contacts, respond to your enquiries and fulfill your requests, assist you with your transactions or provide you with investor related services.',
+          'The use and processing of your personal data is necessary for our legitimate interests in providing our services, carrying out of administrative duties, the running of our business and in order to make or advise on investment decisions.'
+        ],
+      },
+      {
+        heading: 'Communications And Correspondence',
+        text: [
+          'In the course of communications or correspondence with you we may need to collect your personal data in order to develop our services and offerings and inform our marketing strategy.',
+          'providing our services, administrative purposes, making or advising on investment decisions, performance of contractual relationships, to comply with relevant regulations and laws, tax and compliance obligations including anti money laundering regulations and criminal background checks.',
+          'running our business, administrative purposes, to enable performance of contractual relations, allow us to progress your potential employment or internship job career.'
+        ],
+      },
+    ]
   },
   {
-    id: 4,
-    applicationsCount: 72,
-
-    portfolio: 'Cypher',
-    name: 'head of growth - medical device startup',
-    keyWords: ['full time', 'remote', 'business develepoment'],
-    category: 'Data Science',
-    publishDate: 'Dec 27 2022',
-    location: 'Silicon valley - California, USA',
-    skills: {
-      experience: 'Minimum 1 year',
-      workLevel: 'Senior level',
-      employeeType: 'Full time job',
-      offerSalary: 2750
-    },
-    description: {
-      overview: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.'
-      ],
-      jobDescription: [
-        'We are now looking for our Head of Growth.',
-        'This position is for you, if you: are excited to bring a new treatments to the world for diseases that affect billions of people worldwide. want to work in the intersection of medical technology, digital health, hardware, psychology and artificial intelligence.',
-        'have a strong passion and integrity for what you do and want to challenge the way we treat mental health problems today. enjoy being one of the first employees in a startup with truly global potential and ambitions, and be a part of shaping the culture and future of the company. are a natural leader that will scale with the organisation as it grows.'
-      ],
-      responsibilities: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-      ],
-      skills: [
-        'creative',
-        'integrity',
-        'intellectual breadth',
-        'ability to admin when wrong',
-        'ability to work in a diverse team',
-        'sense of humor',
-        'emotional openness'
-      ]
-    },
+    section: 'Security Of Your Data.',
+    content: [
+      {
+        heading: 'General',
+        text: [
+          'We may collect your personal data from direct and indirect interactions with you to provide our services as agreed by you or to fulfill our contractual obligations with you.',
+          'In this regard we may gather personal data that may include your:',
+          'Name, address, nationality, email address, telephone number, bank account details, job title, name of employer, bank account details, tax ID or your national insurance number, forms of identification.',
+          'We may use this information to:',
+          'Set up meetings with you, maintain a record of your contacts, respond to your enquiries and fulfill your requests, assist you with your transactions or provide you with investor related services.',
+          'The use and processing of your personal data is necessary for our legitimate interests in providing our services, carrying out of administrative duties, the running of our business and in order to make or advise on investment decisions.'
+        ],
+      },
+      {
+        heading: 'Communications And Correspondence',
+        text: [
+          'In the course of communications or correspondence with you we may need to collect your personal data in order to develop our services and offerings and inform our marketing strategy.',
+          'providing our services, administrative purposes, making or advising on investment decisions, performance of contractual relationships, to comply with relevant regulations and laws, tax and compliance obligations including anti money laundering regulations and criminal background checks.',
+          'running our business, administrative purposes, to enable performance of contractual relations, allow us to progress your potential employment or internship job career.'
+        ],
+      },
+    ]
   },
   {
-    id: 5,
-    applicationsCount: 72,
-
-    portfolio: 'Ordix',
-    name: 'Software Developer - Robot Systems.',
-    keyWords: ['Internship', 'Paris @agronavo', 'marketing'],
-    category: 'Data Science',
-    publishDate: 'Dec 27 2022',
-    location: 'Silicon valley - California, USA',
-    skills: {
-      experience: 'Minimum 1 year',
-      workLevel: 'Senior level',
-      employeeType: 'Full time job',
-      offerSalary: 2750
-    },
-    description: {
-      overview: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.'
-      ],
-      jobDescription: [
-        'We are now looking for our Head of Growth.',
-        'This position is for you, if you: are excited to bring a new treatments to the world for diseases that affect billions of people worldwide. want to work in the intersection of medical technology, digital health, hardware, psychology and artificial intelligence.',
-        'have a strong passion and integrity for what you do and want to challenge the way we treat mental health problems today. enjoy being one of the first employees in a startup with truly global potential and ambitions, and be a part of shaping the culture and future of the company. are a natural leader that will scale with the organisation as it grows.'
-      ],
-      responsibilities: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-      ],
-      skills: [
-        'creative',
-        'integrity',
-        'intellectual breadth',
-        'ability to admin when wrong',
-        'ability to work in a diverse team',
-        'sense of humor',
-        'emotional openness'
-      ]
-    },
-  },
-
-  {
-    id: 6,
-    applicationsCount: 72,
-
-    portfolio: 'Kawaski',
-    name: 'Sales intern - right hand to the COO.',
-    keyWords: ['Internship', 'Paris @agronavo', 'marketing'],
-    category: 'Finance',
-    publishDate: 'Dec 27 2022',
-    location: 'Silicon valley - California, USA',
-    skills: {
-      experience: 'Minimum 1 year',
-      workLevel: 'Senior level',
-      employeeType: 'Full time job',
-      offerSalary: 2750
-    },
-    description: {
-      overview: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.'
-      ],
-      jobDescription: [
-        'We are now looking for our Head of Growth.',
-        'This position is for you, if you: are excited to bring a new treatments to the world for diseases that affect billions of people worldwide. want to work in the intersection of medical technology, digital health, hardware, psychology and artificial intelligence.',
-        'have a strong passion and integrity for what you do and want to challenge the way we treat mental health problems today. enjoy being one of the first employees in a startup with truly global potential and ambitions, and be a part of shaping the culture and future of the company. are a natural leader that will scale with the organisation as it grows.'
-      ],
-      responsibilities: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-      ],
-      skills: [
-        'creative',
-        'integrity',
-        'intellectual breadth',
-        'ability to admin when wrong',
-        'ability to work in a diverse team',
-        'sense of humor',
-        'emotional openness'
-      ]
-    },
+    section: 'International Transfers',
+    content: [
+      {
+        heading: 'General',
+        text: [
+          'We may collect your personal data from direct and indirect interactions with you to provide our services as agreed by you or to fulfill our contractual obligations with you.',
+          'In this regard we may gather personal data that may include your:',
+          'Name, address, nationality, email address, telephone number, bank account details, job title, name of employer, bank account details, tax ID or your national insurance number, forms of identification.',
+          'We may use this information to:',
+          'Set up meetings with you, maintain a record of your contacts, respond to your enquiries and fulfill your requests, assist you with your transactions or provide you with investor related services.',
+          'The use and processing of your personal data is necessary for our legitimate interests in providing our services, carrying out of administrative duties, the running of our business and in order to make or advise on investment decisions.'
+        ],
+      },
+      {
+        heading: 'Communications And Correspondence',
+        text: [
+          'In the course of communications or correspondence with you we may need to collect your personal data in order to develop our services and offerings and inform our marketing strategy.',
+          'providing our services, administrative purposes, making or advising on investment decisions, performance of contractual relationships, to comply with relevant regulations and laws, tax and compliance obligations including anti money laundering regulations and criminal background checks.',
+          'running our business, administrative purposes, to enable performance of contractual relations, allow us to progress your potential employment or internship job career.'
+        ],
+      },
+    ]
   },
   {
-    id: 7,
-    applicationsCount: 72,
-
-    portfolio: 'Cypher',
-    name: 'head of growth - medical device startup',
-    keyWords: ['full time', 'remote', 'business develepoment'],
-    category: 'Finance',
-    publishDate: 'Dec 27 2022',
-    location: 'Silicon valley - California, USA',
-    skills: {
-      experience: 'Minimum 1 year',
-      workLevel: 'Senior level',
-      employeeType: 'Full time job',
-      offerSalary: 2750
-    },
-    description: {
-      overview: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.'
-      ],
-      jobDescription: [
-        'We are now looking for our Head of Growth.',
-        'This position is for you, if you: are excited to bring a new treatments to the world for diseases that affect billions of people worldwide. want to work in the intersection of medical technology, digital health, hardware, psychology and artificial intelligence.',
-        'have a strong passion and integrity for what you do and want to challenge the way we treat mental health problems today. enjoy being one of the first employees in a startup with truly global potential and ambitions, and be a part of shaping the culture and future of the company. are a natural leader that will scale with the organisation as it grows.'
-      ],
-      responsibilities: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-      ],
-      skills: [
-        'creative',
-        'integrity',
-        'intellectual breadth',
-        'ability to admin when wrong',
-        'ability to work in a diverse team',
-        'sense of humor',
-        'emotional openness'
-      ]
-    },
+    section: 'Security Of Your Data',
+    content: [
+      {
+        heading: 'General',
+        text: [
+          'We may collect your personal data from direct and indirect interactions with you to provide our services as agreed by you or to fulfill our contractual obligations with you.',
+          'In this regard we may gather personal data that may include your:',
+          'Name, address, nationality, email address, telephone number, bank account details, job title, name of employer, bank account details, tax ID or your national insurance number, forms of identification.',
+          'We may use this information to:',
+          'Set up meetings with you, maintain a record of your contacts, respond to your enquiries and fulfill your requests, assist you with your transactions or provide you with investor related services.',
+          'The use and processing of your personal data is necessary for our legitimate interests in providing our services, carrying out of administrative duties, the running of our business and in order to make or advise on investment decisions.'
+        ],
+      },
+      {
+        heading: 'Communications And Correspondence',
+        text: [
+          'In the course of communications or correspondence with you we may need to collect your personal data in order to develop our services and offerings and inform our marketing strategy.',
+          'providing our services, administrative purposes, making or advising on investment decisions, performance of contractual relationships, to comply with relevant regulations and laws, tax and compliance obligations including anti money laundering regulations and criminal background checks.',
+          'running our business, administrative purposes, to enable performance of contractual relations, allow us to progress your potential employment or internship job career.'
+        ],
+      },
+    ]
   },
   {
-    id: 8,
-    applicationsCount: 72,
-
-    portfolio: 'Ordix',
-    name: 'Software Developer - Robot Systems.',
-    keyWords: ['Internship', 'Paris @agronavo', 'marketing'],
-    category: 'Finance',
-    publishDate: 'Dec 27 2022',
-    location: 'Silicon valley - California, USA',
-    skills: {
-      experience: 'Minimum 1 year',
-      workLevel: 'Senior level',
-      employeeType: 'Full time job',
-      offerSalary: 2750
-    },
-    description: {
-      overview: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.'
-      ],
-      jobDescription: [
-        'We are now looking for our Head of Growth.',
-        'This position is for you, if you: are excited to bring a new treatments to the world for diseases that affect billions of people worldwide. want to work in the intersection of medical technology, digital health, hardware, psychology and artificial intelligence.',
-        'have a strong passion and integrity for what you do and want to challenge the way we treat mental health problems today. enjoy being one of the first employees in a startup with truly global potential and ambitions, and be a part of shaping the culture and future of the company. are a natural leader that will scale with the organisation as it grows.'
-      ],
-      responsibilities: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-      ],
-      skills: [
-        'creative',
-        'integrity',
-        'intellectual breadth',
-        'ability to admin when wrong',
-        'ability to work in a diverse team',
-        'sense of humor',
-        'emotional openness'
-      ]
-    },
-  },
-
-  {
-    id: 9,
-    applicationsCount: 72,
-
-    portfolio: 'Kawaski',
-    name: 'Sales intern - right hand to the COO.',
-    keyWords: ['Internship', 'Paris @agronavo', 'marketing'],
-    category: 'Operations',
-    publishDate: 'Dec 27 2022',
-    location: 'Silicon valley - California, USA',
-    skills: {
-      experience: 'Minimum 1 year',
-      workLevel: 'Senior level',
-      employeeType: 'Full time job',
-      offerSalary: 2750
-    },
-    description: {
-      overview: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.'
-      ],
-      jobDescription: [
-        'We are now looking for our Head of Growth.',
-        'This position is for you, if you: are excited to bring a new treatments to the world for diseases that affect billions of people worldwide. want to work in the intersection of medical technology, digital health, hardware, psychology and artificial intelligence.',
-        'have a strong passion and integrity for what you do and want to challenge the way we treat mental health problems today. enjoy being one of the first employees in a startup with truly global potential and ambitions, and be a part of shaping the culture and future of the company. are a natural leader that will scale with the organisation as it grows.'
-      ],
-      responsibilities: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-      ],
-      skills: [
-        'creative',
-        'integrity',
-        'intellectual breadth',
-        'ability to admin when wrong',
-        'ability to work in a diverse team',
-        'sense of humor',
-        'emotional openness'
-      ]
-    },
-  },
-  {
-    id: 10,
-    applicationsCount: 1,
-
-    portfolio: 'Cypher',
-    name: 'head of growth - medical device startup',
-    keyWords: ['full time', 'remote', 'business develepoment'],
-    category: 'Operations',
-    publishDate: 'dec 28 2022',
-    location: 'Silicon valley - California, USA',
-    skills: {
-      experience: 'Minimum 1 year',
-      workLevel: 'Senior level',
-      employeeType: 'Full time job',
-      offerSalary: 2750
-    },
-    description: {
-      overview: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.'
-      ],
-      jobDescription: [
-        'We are now looking for our Head of Growth.',
-        'This position is for you, if you: are excited to bring a new treatments to the world for diseases that affect billions of people worldwide. want to work in the intersection of medical technology, digital health, hardware, psychology and artificial intelligence.',
-        'have a strong passion and integrity for what you do and want to challenge the way we treat mental health problems today. enjoy being one of the first employees in a startup with truly global potential and ambitions, and be a part of shaping the culture and future of the company. are a natural leader that will scale with the organisation as it grows.'
-      ],
-      responsibilities: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-      ],
-      skills: [
-        'creative',
-        'integrity',
-        'intellectual breadth',
-        'ability to admin when wrong',
-        'ability to work in a diverse team',
-        'sense of humor',
-        'emotional openness'
-      ]
-    },
-  },
-  {
-    id: 11,
-
-    applicationsCount: 72,
-    portfolio: 'Ordix',
-    name: 'Software Developer - Robot Systems.',
-    keyWords: ['Internship', 'Paris @agronavo', 'marketing'],
-    category: 'Operations',
-    publishDate: 'Dec 27 2022',
-    location: 'Silicon valley - California, USA',
-    skills: {
-      experience: 'Minimum 1 year',
-      workLevel: 'Senior level',
-      employeeType: 'Full time job',
-      offerSalary: 2750
-    },
-    description: {
-      overview: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.'
-      ],
-      jobDescription: [
-        'We are now looking for our Head of Growth.',
-        'This position is for you, if you: are excited to bring a new treatments to the world for diseases that affect billions of people worldwide. want to work in the intersection of medical technology, digital health, hardware, psychology and artificial intelligence.',
-        'have a strong passion and integrity for what you do and want to challenge the way we treat mental health problems today. enjoy being one of the first employees in a startup with truly global potential and ambitions, and be a part of shaping the culture and future of the company. are a natural leader that will scale with the organisation as it grows.'
-      ],
-      responsibilities: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-      ],
-      skills: [
-        'creative',
-        'integrity',
-        'intellectual breadth',
-        'ability to admin when wrong',
-        'ability to work in a diverse team',
-        'sense of humor',
-        'emotional openness'
-      ]
-    },
-  },
-
-  {
-    id: 12,
-    applicationsCount: 72,
-
-    portfolio: 'Kawaski',
-    name: 'Sales intern - right hand to the COO.',
-    keyWords: ['Internship', 'Paris @agronavo', 'marketing'],
-    category: 'Business development',
-    publishDate: 'Dec 27 2022',
-    location: 'Silicon valley - California, USA',
-    skills: {
-      experience: 'Minimum 1 year',
-      workLevel: 'Senior level',
-      employeeType: 'Full time job',
-      offerSalary: 2750
-    },
-    description: {
-      overview: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.'
-      ],
-      jobDescription: [
-        'We are now looking for our Head of Growth.',
-        'This position is for you, if you: are excited to bring a new treatments to the world for diseases that affect billions of people worldwide. want to work in the intersection of medical technology, digital health, hardware, psychology and artificial intelligence.',
-        'have a strong passion and integrity for what you do and want to challenge the way we treat mental health problems today. enjoy being one of the first employees in a startup with truly global potential and ambitions, and be a part of shaping the culture and future of the company. are a natural leader that will scale with the organisation as it grows.'
-      ],
-      responsibilities: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-      ],
-      skills: [
-        'creative',
-        'integrity',
-        'intellectual breadth',
-        'ability to admin when wrong',
-        'ability to work in a diverse team',
-        'sense of humor',
-        'emotional openness'
-      ]
-    },
-  },
-  {
-    id: 13,
-    applicationsCount: 72,
-
-    portfolio: 'Cypher',
-    name: 'head of growth - medical device startup',
-    keyWords: ['full time', 'remote', 'business develepoment'],
-    category: 'Business development',
-    publishDate: 'Dec 27 2022',
-    location: 'Silicon valley - California, USA',
-    skills: {
-      experience: 'Minimum 1 year',
-      workLevel: 'Senior level',
-      employeeType: 'Full time job',
-      offerSalary: 2750
-    },
-    description: {
-      overview: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.'
-      ],
-      jobDescription: [
-        'We are now looking for our Head of Growth.',
-        'This position is for you, if you: are excited to bring a new treatments to the world for diseases that affect billions of people worldwide. want to work in the intersection of medical technology, digital health, hardware, psychology and artificial intelligence.',
-        'have a strong passion and integrity for what you do and want to challenge the way we treat mental health problems today. enjoy being one of the first employees in a startup with truly global potential and ambitions, and be a part of shaping the culture and future of the company. are a natural leader that will scale with the organisation as it grows.'
-      ],
-      responsibilities: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-      ],
-      skills: [
-        'creative',
-        'integrity',
-        'intellectual breadth',
-        'ability to admin when wrong',
-        'ability to work in a diverse team',
-        'sense of humor',
-        'emotional openness'
-      ]
-    },
-  },
-  {
-    id: 14,
-    applicationsCount: 72,
-
-    portfolio: 'Ordix',
-    name: 'Software Developer - Robot Systems.',
-    keyWords: ['Internship', 'Paris @agronavo', 'marketing'],
-    category: 'Business development',
-    publishDate: 'Dec 27 2022',
-    location: 'Silicon valley - California, USA',
-    skills: {
-      experience: 'Minimum 1 year',
-      workLevel: 'Senior level',
-      employeeType: 'Full time job',
-      offerSalary: 2750
-    },
-    description: {
-      overview: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.'
-      ],
-      jobDescription: [
-        'We are now looking for our Head of Growth.',
-        'This position is for you, if you: are excited to bring a new treatments to the world for diseases that affect billions of people worldwide. want to work in the intersection of medical technology, digital health, hardware, psychology and artificial intelligence.',
-        'have a strong passion and integrity for what you do and want to challenge the way we treat mental health problems today. enjoy being one of the first employees in a startup with truly global potential and ambitions, and be a part of shaping the culture and future of the company. are a natural leader that will scale with the organisation as it grows.'
-      ],
-      responsibilities: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-      ],
-      skills: [
-        'creative',
-        'integrity',
-        'intellectual breadth',
-        'ability to admin when wrong',
-        'ability to work in a diverse team',
-        'sense of humor',
-        'emotional openness'
-      ]
-    },
-  },
-
-  {
-    id: 15,
-    applicationsCount: 72,
-
-    portfolio: 'Kawaski',
-    name: 'Sales intern - right hand to the COO.',
-    keyWords: ['Internship', 'Paris @agronavo', 'marketing'],
-    category: 'Software',
-    publishDate: 'Dec 27 2022',
-    location: 'Silicon valley - California, USA',
-    skills: {
-      experience: 'Minimum 1 year',
-      workLevel: 'Senior level',
-      employeeType: 'Full time job',
-      offerSalary: 2750
-    },
-    description: {
-      overview: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.'
-      ],
-      jobDescription: [
-        'We are now looking for our Head of Growth.',
-        'This position is for you, if you: are excited to bring a new treatments to the world for diseases that affect billions of people worldwide. want to work in the intersection of medical technology, digital health, hardware, psychology and artificial intelligence.',
-        'have a strong passion and integrity for what you do and want to challenge the way we treat mental health problems today. enjoy being one of the first employees in a startup with truly global potential and ambitions, and be a part of shaping the culture and future of the company. are a natural leader that will scale with the organisation as it grows.'
-      ],
-      responsibilities: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-      ],
-      skills: [
-        'creative',
-        'integrity',
-        'intellectual breadth',
-        'ability to admin when wrong',
-        'ability to work in a diverse team',
-        'sense of humor',
-        'emotional openness'
-      ]
-    },
-  },
-  {
-    id: 16,
-    applicationsCount: 72,
-
-    portfolio: 'Cypher',
-    name: 'head of growth - medical device startup',
-    keyWords: ['full time', 'remote', 'business develepoment'],
-    category: 'Software',
-    publishDate: 'Dec 27 2022',
-    location: 'Silicon valley - California, USA',
-    skills: {
-      experience: 'Minimum 1 year',
-      workLevel: 'Senior level',
-      employeeType: 'Full time job',
-      offerSalary: 2750
-    },
-    description: {
-      overview: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.'
-      ],
-      jobDescription: [
-        'We are now looking for our Head of Growth.',
-        'This position is for you, if you: are excited to bring a new treatments to the world for diseases that affect billions of people worldwide. want to work in the intersection of medical technology, digital health, hardware, psychology and artificial intelligence.',
-        'have a strong passion and integrity for what you do and want to challenge the way we treat mental health problems today. enjoy being one of the first employees in a startup with truly global potential and ambitions, and be a part of shaping the culture and future of the company. are a natural leader that will scale with the organisation as it grows.'
-      ],
-      responsibilities: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-      ],
-      skills: [
-        'creative',
-        'integrity',
-        'intellectual breadth',
-        'ability to admin when wrong',
-        'ability to work in a diverse team',
-        'sense of humor',
-        'emotional openness'
-      ]
-    },
-  },
-  {
-    id: 17,
-    applicationsCount: 72,
-
-    portfolio: 'Ordix',
-    name: 'Software Developer - Robot Systems.',
-    keyWords: ['Internship', 'Paris @agronavo', 'marketing'],
-    category: 'Software',
-    publishDate: 'Dec 27 2022',
-    location: 'Silicon valley - California, USA',
-    skills: {
-      experience: 'Minimum 1 year',
-      workLevel: 'Senior level',
-      employeeType: 'Full time job',
-      offerSalary: 2750
-    },
-    description: {
-      overview: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.'
-      ],
-      jobDescription: [
-        'We are now looking for our Head of Growth.',
-        'This position is for you, if you: are excited to bring a new treatments to the world for diseases that affect billions of people worldwide. want to work in the intersection of medical technology, digital health, hardware, psychology and artificial intelligence.',
-        'have a strong passion and integrity for what you do and want to challenge the way we treat mental health problems today. enjoy being one of the first employees in a startup with truly global potential and ambitions, and be a part of shaping the culture and future of the company. are a natural leader that will scale with the organisation as it grows.'
-      ],
-      responsibilities: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-      ],
-      skills: [
-        'creative',
-        'integrity',
-        'intellectual breadth',
-        'ability to admin when wrong',
-        'ability to work in a diverse team',
-        'sense of humor',
-        'emotional openness'
-      ]
-    },
-  },
-
-  {
-    id: 18,
-    applicationsCount: 72,
-
-    portfolio: 'Kawaski',
-    name: 'Sales intern - right hand to the COO.',
-    keyWords: ['Internship', 'Paris @agronavo', 'marketing'],
-    category: 'Marketing',
-    publishDate: 'Dec 27 2022',
-    location: 'Silicon valley - California, USA',
-    skills: {
-      experience: 'Minimum 1 year',
-      workLevel: 'Senior level',
-      employeeType: 'Full time job',
-      offerSalary: 2750
-    },
-    description: {
-      overview: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.'
-      ],
-      jobDescription: [
-        'We are now looking for our Head of Growth.',
-        'This position is for you, if you: are excited to bring a new treatments to the world for diseases that affect billions of people worldwide. want to work in the intersection of medical technology, digital health, hardware, psychology and artificial intelligence.',
-        'have a strong passion and integrity for what you do and want to challenge the way we treat mental health problems today. enjoy being one of the first employees in a startup with truly global potential and ambitions, and be a part of shaping the culture and future of the company. are a natural leader that will scale with the organisation as it grows.'
-      ],
-      responsibilities: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-      ],
-      skills: [
-        'creative',
-        'integrity',
-        'intellectual breadth',
-        'ability to admin when wrong',
-        'ability to work in a diverse team',
-        'sense of humor',
-        'emotional openness'
-      ]
-    },
-  },
-  {
-    id: 19,
-    applicationsCount: 72,
-
-    portfolio: 'Cypher',
-    name: 'head of growth - medical device startup',
-    keyWords: ['full time', 'remote', 'business develepoment'],
-    category: 'Marketing',
-    publishDate: 'Dec 27 2022',
-    location: 'Silicon valley - California, USA',
-    skills: {
-      experience: 'Minimum 1 year',
-      workLevel: 'Senior level',
-      employeeType: 'Full time job',
-      offerSalary: 2750
-    },
-    description: {
-      overview: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.'
-      ],
-      jobDescription: [
-        'We are now looking for our Head of Growth.',
-        'This position is for you, if you: are excited to bring a new treatments to the world for diseases that affect billions of people worldwide. want to work in the intersection of medical technology, digital health, hardware, psychology and artificial intelligence.',
-        'have a strong passion and integrity for what you do and want to challenge the way we treat mental health problems today. enjoy being one of the first employees in a startup with truly global potential and ambitions, and be a part of shaping the culture and future of the company. are a natural leader that will scale with the organisation as it grows.'
-      ],
-      responsibilities: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-      ],
-      skills: [
-        'creative',
-        'integrity',
-        'intellectual breadth',
-        'ability to admin when wrong',
-        'ability to work in a diverse team',
-        'sense of humor',
-        'emotional openness'
-      ]
-    },
-  },
-  {
-    id: 20,
-    applicationsCount: 72,
-
-    portfolio: 'Ordix',
-    name: 'Software Developer - Robot Systems.',
-    keyWords: ['Internship', 'Paris @agronavo', 'marketing'],
-    category: 'Marketing',
-    publishDate: 'Dec 27 2022',
-    location: 'Silicon valley - California, USA',
-    skills: {
-      experience: 'Minimum 1 year',
-      workLevel: 'Senior level',
-      employeeType: 'Full time job',
-      offerSalary: 2750
-    },
-    description: {
-      overview: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.'
-      ],
-      jobDescription: [
-        'We are now looking for our Head of Growth.',
-        'This position is for you, if you: are excited to bring a new treatments to the world for diseases that affect billions of people worldwide. want to work in the intersection of medical technology, digital health, hardware, psychology and artificial intelligence.',
-        'have a strong passion and integrity for what you do and want to challenge the way we treat mental health problems today. enjoy being one of the first employees in a startup with truly global potential and ambitions, and be a part of shaping the culture and future of the company. are a natural leader that will scale with the organisation as it grows.'
-      ],
-      responsibilities: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-      ],
-      skills: [
-        'creative',
-        'integrity',
-        'intellectual breadth',
-        'ability to admin when wrong',
-        'ability to work in a diverse team',
-        'sense of humor',
-        'emotional openness'
-      ]
-    },
-  },
-  {
-    id: 21,
-    portfolio: 'Kawaski',
-    name: 'Sales intern - right hand to the COO.',
-    keyWords: ['Internship', 'Paris @agronavo', 'marketing'],
-    category: 'Human Resources',
-    publishDate: 'Dec 27 2022',
-    applicationsCount: 72,
-    location: 'Silicon valley - California, USA',
-    skills: {
-      experience: 'Minimum 1 year',
-      workLevel: 'Senior level',
-      employeeType: 'Full time job',
-      offerSalary: 2750
-    },
-    description: {
-      overview: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.'
-      ],
-      jobDescription: [
-        'We are now looking for our Head of Growth.',
-        'This position is for you, if you: are excited to bring a new treatments to the world for diseases that affect billions of people worldwide. want to work in the intersection of medical technology, digital health, hardware, psychology and artificial intelligence.',
-        'have a strong passion and integrity for what you do and want to challenge the way we treat mental health problems today. enjoy being one of the first employees in a startup with truly global potential and ambitions, and be a part of shaping the culture and future of the company. are a natural leader that will scale with the organisation as it grows.'
-      ],
-      responsibilities: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-      ],
-      skills: [
-        'creative',
-        'integrity',
-        'intellectual breadth',
-        'ability to admin when wrong',
-        'ability to work in a diverse team',
-        'sense of humor',
-        'emotional openness'
-      ]
-    },
-  },
-  {
-    id: 22,
-    portfolio: 'Cypher',
-    name: 'head of growth - medical device startup',
-    keyWords: ['full time', 'remote', 'business develepoment'],
-    category: 'Human Resources',
-    publishDate: 'Dec 27 2022',
-    applicationsCount: 72,
-    location: 'Silicon valley - California, USA',
-    skills: {
-      experience: 'Minimum 1 year',
-      workLevel: 'Senior level',
-      employeeType: 'Full time job',
-      offerSalary: 2750
-    },
-    description: {
-      overview: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.'
-      ],
-      jobDescription: [
-        'We are now looking for our Head of Growth.',
-        'This position is for you, if you: are excited to bring a new treatments to the world for diseases that affect billions of people worldwide. want to work in the intersection of medical technology, digital health, hardware, psychology and artificial intelligence.',
-        'have a strong passion and integrity for what you do and want to challenge the way we treat mental health problems today. enjoy being one of the first employees in a startup with truly global potential and ambitions, and be a part of shaping the culture and future of the company. are a natural leader that will scale with the organisation as it grows.'
-      ],
-      responsibilities: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-      ],
-      skills: [
-        'creative',
-        'integrity',
-        'intellectual breadth',
-        'ability to admin when wrong',
-        'ability to work in a diverse team',
-        'sense of humor',
-        'emotional openness'
-      ]
-    },
-  },
-  {
-    id: 23,
-
-    applicationsCount: 72,
-    portfolio: 'Ordix',
-    name: 'Software Developer - Robot Systems.',
-    keyWords: ['Internship', 'Paris @agronavo', 'marketing'],
-    category: 'Human Resources',
-    publishDate: 'Dec 27 2022',
-    location: 'Silicon valley - California, USA',
-    skills: {
-      experience: 'Minimum 1 year',
-      workLevel: 'Senior level',
-      employeeType: 'Full time job',
-      offerSalary: 2750
-    },
-    description: {
-      overview: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.'
-      ],
-      jobDescription: [
-        'We are now looking for our Head of Growth.',
-        'This position is for you, if you: are excited to bring a new treatments to the world for diseases that affect billions of people worldwide. want to work in the intersection of medical technology, digital health, hardware, psychology and artificial intelligence.',
-        'have a strong passion and integrity for what you do and want to challenge the way we treat mental health problems today. enjoy being one of the first employees in a startup with truly global potential and ambitions, and be a part of shaping the culture and future of the company. are a natural leader that will scale with the organisation as it grows.'
-      ],
-      responsibilities: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-      ],
-      skills: [
-        'creative',
-        'integrity',
-        'intellectual breadth',
-        'ability to admin when wrong',
-        'ability to work in a diverse team',
-        'sense of humor',
-        'emotional openness'
-      ]
-    },
-  },
-
-  {
-    id: 24,
-    applicationsCount: 72,
-
-    portfolio: 'Kawaski',
-    name: 'Sales intern - right hand to the COO.',
-    keyWords: ['Internship', 'Paris @agronavo', 'marketing'],
-    category: 'Data Science',
-    publishDate: 'Dec 27 2022',
-    location: 'Silicon valley - California, USA',
-    skills: {
-      experience: 'Minimum 1 year',
-      workLevel: 'Senior level',
-      employeeType: 'Full time job',
-      offerSalary: 2750
-    },
-    description: {
-      overview: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.'
-      ],
-      jobDescription: [
-        'We are now looking for our Head of Growth.',
-        'This position is for you, if you: are excited to bring a new treatments to the world for diseases that affect billions of people worldwide. want to work in the intersection of medical technology, digital health, hardware, psychology and artificial intelligence.',
-        'have a strong passion and integrity for what you do and want to challenge the way we treat mental health problems today. enjoy being one of the first employees in a startup with truly global potential and ambitions, and be a part of shaping the culture and future of the company. are a natural leader that will scale with the organisation as it grows.'
-      ],
-      responsibilities: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-      ],
-      skills: [
-        'creative',
-        'integrity',
-        'intellectual breadth',
-        'ability to admin when wrong',
-        'ability to work in a diverse team',
-        'sense of humor',
-        'emotional openness'
-      ]
-    },
-  },
-  {
-    id: 25,
-    applicationsCount: 72,
-
-    portfolio: 'Cypher',
-    name: 'head of growth - medical device startup',
-    keyWords: ['full time', 'remote', 'business develepoment'],
-    category: 'Data Science',
-    publishDate: 'Dec 27 2022',
-    location: 'Silicon valley - California, USA',
-    skills: {
-      experience: 'Minimum 1 year',
-      workLevel: 'Senior level',
-      employeeType: 'Full time job',
-      offerSalary: 2750
-    },
-    description: {
-      overview: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.'
-      ],
-      jobDescription: [
-        'We are now looking for our Head of Growth.',
-        'This position is for you, if you: are excited to bring a new treatments to the world for diseases that affect billions of people worldwide. want to work in the intersection of medical technology, digital health, hardware, psychology and artificial intelligence.',
-        'have a strong passion and integrity for what you do and want to challenge the way we treat mental health problems today. enjoy being one of the first employees in a startup with truly global potential and ambitions, and be a part of shaping the culture and future of the company. are a natural leader that will scale with the organisation as it grows.'
-      ],
-      responsibilities: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-      ],
-      skills: [
-        'creative',
-        'integrity',
-        'intellectual breadth',
-        'ability to admin when wrong',
-        'ability to work in a diverse team',
-        'sense of humor',
-        'emotional openness'
-      ]
-    },
-  },
-  {
-    id: 26,
-    applicationsCount: 72,
-
-    portfolio: 'Ordix',
-    name: 'Software Developer - Robot Systems.',
-    keyWords: ['Internship', 'Paris @agronavo', 'marketing'],
-    category: 'Data Science',
-    publishDate: 'Dec 27 2022',
-    location: 'Silicon valley - California, USA',
-    skills: {
-      experience: 'Minimum 1 year',
-      workLevel: 'Senior level',
-      employeeType: 'Full time job',
-      offerSalary: 2750
-    },
-    description: {
-      overview: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.'
-      ],
-      jobDescription: [
-        'We are now looking for our Head of Growth.',
-        'This position is for you, if you: are excited to bring a new treatments to the world for diseases that affect billions of people worldwide. want to work in the intersection of medical technology, digital health, hardware, psychology and artificial intelligence.',
-        'have a strong passion and integrity for what you do and want to challenge the way we treat mental health problems today. enjoy being one of the first employees in a startup with truly global potential and ambitions, and be a part of shaping the culture and future of the company. are a natural leader that will scale with the organisation as it grows.'
-      ],
-      responsibilities: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-      ],
-      skills: [
-        'creative',
-        'integrity',
-        'intellectual breadth',
-        'ability to admin when wrong',
-        'ability to work in a diverse team',
-        'sense of humor',
-        'emotional openness'
-      ]
-    },
-  },
-
-  {
-    id: 27,
-    applicationsCount: 72,
-
-    portfolio: 'Kawaski',
-    name: 'Sales intern - right hand to the COO.',
-    keyWords: ['Internship', 'Paris @agronavo', 'marketing'],
-    category: 'Finance',
-    publishDate: 'Dec 27 2022',
-    location: 'Silicon valley - California, USA',
-    skills: {
-      experience: 'Minimum 1 year',
-      workLevel: 'Senior level',
-      employeeType: 'Full time job',
-      offerSalary: 2750
-    },
-    description: {
-      overview: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.'
-      ],
-      jobDescription: [
-        'We are now looking for our Head of Growth.',
-        'This position is for you, if you: are excited to bring a new treatments to the world for diseases that affect billions of people worldwide. want to work in the intersection of medical technology, digital health, hardware, psychology and artificial intelligence.',
-        'have a strong passion and integrity for what you do and want to challenge the way we treat mental health problems today. enjoy being one of the first employees in a startup with truly global potential and ambitions, and be a part of shaping the culture and future of the company. are a natural leader that will scale with the organisation as it grows.'
-      ],
-      responsibilities: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-      ],
-      skills: [
-        'creative',
-        'integrity',
-        'intellectual breadth',
-        'ability to admin when wrong',
-        'ability to work in a diverse team',
-        'sense of humor',
-        'emotional openness'
-      ]
-    },
-  },
-  {
-    id: 28,
-    applicationsCount: 72,
-
-    portfolio: 'Cypher',
-    name: 'head of growth - medical device startup',
-    keyWords: ['full time', 'remote', 'business develepoment'],
-    category: 'Finance',
-    publishDate: 'Dec 27 2022',
-    location: 'Silicon valley - California, USA',
-    skills: {
-      experience: 'Minimum 1 year',
-      workLevel: 'Senior level',
-      employeeType: 'Full time job',
-      offerSalary: 2750
-    },
-    description: {
-      overview: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.'
-      ],
-      jobDescription: [
-        'We are now looking for our Head of Growth.',
-        'This position is for you, if you: are excited to bring a new treatments to the world for diseases that affect billions of people worldwide. want to work in the intersection of medical technology, digital health, hardware, psychology and artificial intelligence.',
-        'have a strong passion and integrity for what you do and want to challenge the way we treat mental health problems today. enjoy being one of the first employees in a startup with truly global potential and ambitions, and be a part of shaping the culture and future of the company. are a natural leader that will scale with the organisation as it grows.'
-      ],
-      responsibilities: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-      ],
-      skills: [
-        'creative',
-        'integrity',
-        'intellectual breadth',
-        'ability to admin when wrong',
-        'ability to work in a diverse team',
-        'sense of humor',
-        'emotional openness'
-      ]
-    },
-  },
-  {
-    id: 29,
-    applicationsCount: 72,
-
-    portfolio: 'Ordix',
-    name: 'Software Developer - Robot Systems.',
-    keyWords: ['Internship', 'Paris @agronavo', 'marketing'],
-    category: 'Finance',
-    publishDate: 'Dec 27 2022',
-    location: 'Silicon valley - California, USA',
-    skills: {
-      experience: 'Minimum 1 year',
-      workLevel: 'Senior level',
-      employeeType: 'Full time job',
-      offerSalary: 2750
-    },
-    description: {
-      overview: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.'
-      ],
-      jobDescription: [
-        'We are now looking for our Head of Growth.',
-        'This position is for you, if you: are excited to bring a new treatments to the world for diseases that affect billions of people worldwide. want to work in the intersection of medical technology, digital health, hardware, psychology and artificial intelligence.',
-        'have a strong passion and integrity for what you do and want to challenge the way we treat mental health problems today. enjoy being one of the first employees in a startup with truly global potential and ambitions, and be a part of shaping the culture and future of the company. are a natural leader that will scale with the organisation as it grows.'
-      ],
-      responsibilities: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-      ],
-      skills: [
-        'creative',
-        'integrity',
-        'intellectual breadth',
-        'ability to admin when wrong',
-        'ability to work in a diverse team',
-        'sense of humor',
-        'emotional openness'
-      ]
-    },
-  },
-
-  {
-    id: 30,
-    applicationsCount: 72,
-
-    portfolio: 'Kawaski',
-    name: 'Sales intern - right hand to the COO.',
-    keyWords: ['Internship', 'Paris @agronavo', 'marketing'],
-    category: 'Operations',
-    publishDate: 'Dec 27 2022',
-    location: 'Silicon valley - California, USA',
-    skills: {
-      experience: 'Minimum 1 year',
-      workLevel: 'Senior level',
-      employeeType: 'Full time job',
-      offerSalary: 2750
-    },
-    description: {
-      overview: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.'
-      ],
-      jobDescription: [
-        'We are now looking for our Head of Growth.',
-        'This position is for you, if you: are excited to bring a new treatments to the world for diseases that affect billions of people worldwide. want to work in the intersection of medical technology, digital health, hardware, psychology and artificial intelligence.',
-        'have a strong passion and integrity for what you do and want to challenge the way we treat mental health problems today. enjoy being one of the first employees in a startup with truly global potential and ambitions, and be a part of shaping the culture and future of the company. are a natural leader that will scale with the organisation as it grows.'
-      ],
-      responsibilities: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-      ],
-      skills: [
-        'creative',
-        'integrity',
-        'intellectual breadth',
-        'ability to admin when wrong',
-        'ability to work in a diverse team',
-        'sense of humor',
-        'emotional openness'
-      ]
-    },
-  },
-  {
-    id: 31,
-    applicationsCount: 1,
-
-    portfolio: 'Cypher',
-    name: 'head of growth - medical device startup',
-    keyWords: ['full time', 'remote', 'business develepoment'],
-    category: 'Operations',
-    publishDate: 'dec 28 2022',
-    location: 'Silicon valley - California, USA',
-    skills: {
-      experience: 'Minimum 1 year',
-      workLevel: 'Senior level',
-      employeeType: 'Full time job',
-      offerSalary: 2750
-    },
-    description: {
-      overview: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.'
-      ],
-      jobDescription: [
-        'We are now looking for our Head of Growth.',
-        'This position is for you, if you: are excited to bring a new treatments to the world for diseases that affect billions of people worldwide. want to work in the intersection of medical technology, digital health, hardware, psychology and artificial intelligence.',
-        'have a strong passion and integrity for what you do and want to challenge the way we treat mental health problems today. enjoy being one of the first employees in a startup with truly global potential and ambitions, and be a part of shaping the culture and future of the company. are a natural leader that will scale with the organisation as it grows.'
-      ],
-      responsibilities: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-      ],
-      skills: [
-        'creative',
-        'integrity',
-        'intellectual breadth',
-        'ability to admin when wrong',
-        'ability to work in a diverse team',
-        'sense of humor',
-        'emotional openness'
-      ]
-    },
-  },
-  {
-    id: 32,
-
-    applicationsCount: 72,
-    portfolio: 'Ordix',
-    name: 'Software Developer - Robot Systems.',
-    keyWords: ['Internship', 'Paris @agronavo', 'marketing'],
-    category: 'Operations',
-    publishDate: 'Dec 27 2022',
-    location: 'Silicon valley - California, USA',
-    skills: {
-      experience: 'Minimum 1 year',
-      workLevel: 'Senior level',
-      employeeType: 'Full time job',
-      offerSalary: 2750
-    },
-    description: {
-      overview: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.'
-      ],
-      jobDescription: [
-        'We are now looking for our Head of Growth.',
-        'This position is for you, if you: are excited to bring a new treatments to the world for diseases that affect billions of people worldwide. want to work in the intersection of medical technology, digital health, hardware, psychology and artificial intelligence.',
-        'have a strong passion and integrity for what you do and want to challenge the way we treat mental health problems today. enjoy being one of the first employees in a startup with truly global potential and ambitions, and be a part of shaping the culture and future of the company. are a natural leader that will scale with the organisation as it grows.'
-      ],
-      responsibilities: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-      ],
-      skills: [
-        'creative',
-        'integrity',
-        'intellectual breadth',
-        'ability to admin when wrong',
-        'ability to work in a diverse team',
-        'sense of humor',
-        'emotional openness'
-      ]
-    },
-  },
-
-  {
-    id: 33,
-    applicationsCount: 72,
-
-    portfolio: 'Kawaski',
-    name: 'Sales intern - right hand to the COO.',
-    keyWords: ['Internship', 'Paris @agronavo', 'marketing'],
-    category: 'Business development',
-    publishDate: 'Dec 27 2022',
-    location: 'Silicon valley - California, USA',
-    skills: {
-      experience: 'Minimum 1 year',
-      workLevel: 'Senior level',
-      employeeType: 'Full time job',
-      offerSalary: 2750
-    },
-    description: {
-      overview: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.'
-      ],
-      jobDescription: [
-        'We are now looking for our Head of Growth.',
-        'This position is for you, if you: are excited to bring a new treatments to the world for diseases that affect billions of people worldwide. want to work in the intersection of medical technology, digital health, hardware, psychology and artificial intelligence.',
-        'have a strong passion and integrity for what you do and want to challenge the way we treat mental health problems today. enjoy being one of the first employees in a startup with truly global potential and ambitions, and be a part of shaping the culture and future of the company. are a natural leader that will scale with the organisation as it grows.'
-      ],
-      responsibilities: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-      ],
-      skills: [
-        'creative',
-        'integrity',
-        'intellectual breadth',
-        'ability to admin when wrong',
-        'ability to work in a diverse team',
-        'sense of humor',
-        'emotional openness'
-      ]
-    },
-  },
-  {
-    id: 34,
-    applicationsCount: 72,
-
-    portfolio: 'Cypher',
-    name: 'head of growth - medical device startup',
-    keyWords: ['full time', 'remote', 'business develepoment'],
-    category: 'Business development',
-    publishDate: 'Dec 27 2022',
-    location: 'Silicon valley - California, USA',
-    skills: {
-      experience: 'Minimum 1 year',
-      workLevel: 'Senior level',
-      employeeType: 'Full time job',
-      offerSalary: 2750
-    },
-    description: {
-      overview: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.'
-      ],
-      jobDescription: [
-        'We are now looking for our Head of Growth.',
-        'This position is for you, if you: are excited to bring a new treatments to the world for diseases that affect billions of people worldwide. want to work in the intersection of medical technology, digital health, hardware, psychology and artificial intelligence.',
-        'have a strong passion and integrity for what you do and want to challenge the way we treat mental health problems today. enjoy being one of the first employees in a startup with truly global potential and ambitions, and be a part of shaping the culture and future of the company. are a natural leader that will scale with the organisation as it grows.'
-      ],
-      responsibilities: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-      ],
-      skills: [
-        'creative',
-        'integrity',
-        'intellectual breadth',
-        'ability to admin when wrong',
-        'ability to work in a diverse team',
-        'sense of humor',
-        'emotional openness'
-      ]
-    },
-  },
-  {
-    id: 35,
-    applicationsCount: 72,
-
-    portfolio: 'Ordix',
-    name: 'Software Developer - Robot Systems.',
-    keyWords: ['Internship', 'Paris @agronavo', 'marketing'],
-    category: 'Business development',
-    publishDate: 'Dec 27 2022',
-    location: 'Silicon valley - California, USA',
-    skills: {
-      experience: 'Minimum 1 year',
-      workLevel: 'Senior level',
-      employeeType: 'Full time job',
-      offerSalary: 2750
-    },
-    description: {
-      overview: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.'
-      ],
-      jobDescription: [
-        'We are now looking for our Head of Growth.',
-        'This position is for you, if you: are excited to bring a new treatments to the world for diseases that affect billions of people worldwide. want to work in the intersection of medical technology, digital health, hardware, psychology and artificial intelligence.',
-        'have a strong passion and integrity for what you do and want to challenge the way we treat mental health problems today. enjoy being one of the first employees in a startup with truly global potential and ambitions, and be a part of shaping the culture and future of the company. are a natural leader that will scale with the organisation as it grows.'
-      ],
-      responsibilities: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-      ],
-      skills: [
-        'creative',
-        'integrity',
-        'intellectual breadth',
-        'ability to admin when wrong',
-        'ability to work in a diverse team',
-        'sense of humor',
-        'emotional openness'
-      ]
-    },
-  },
-
-  {
-    id: 36,
-    applicationsCount: 72,
-
-    portfolio: 'Kawaski',
-    name: 'Sales intern - right hand to the COO.',
-    keyWords: ['Internship', 'Paris @agronavo', 'marketing'],
-    category: 'Software',
-    publishDate: 'Dec 27 2022',
-    location: 'Silicon valley - California, USA',
-    skills: {
-      experience: 'Minimum 1 year',
-      workLevel: 'Senior level',
-      employeeType: 'Full time job',
-      offerSalary: 2750
-    },
-    description: {
-      overview: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.'
-      ],
-      jobDescription: [
-        'We are now looking for our Head of Growth.',
-        'This position is for you, if you: are excited to bring a new treatments to the world for diseases that affect billions of people worldwide. want to work in the intersection of medical technology, digital health, hardware, psychology and artificial intelligence.',
-        'have a strong passion and integrity for what you do and want to challenge the way we treat mental health problems today. enjoy being one of the first employees in a startup with truly global potential and ambitions, and be a part of shaping the culture and future of the company. are a natural leader that will scale with the organisation as it grows.'
-      ],
-      responsibilities: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-      ],
-      skills: [
-        'creative',
-        'integrity',
-        'intellectual breadth',
-        'ability to admin when wrong',
-        'ability to work in a diverse team',
-        'sense of humor',
-        'emotional openness'
-      ]
-    },
-  },
-  {
-    id: 37,
-    applicationsCount: 72,
-
-    portfolio: 'Cypher',
-    name: 'head of growth - medical device startup',
-    keyWords: ['full time', 'remote', 'business develepoment'],
-    category: 'Software',
-    publishDate: 'Dec 27 2022',
-    location: 'Silicon valley - California, USA',
-    skills: {
-      experience: 'Minimum 1 year',
-      workLevel: 'Senior level',
-      employeeType: 'Full time job',
-      offerSalary: 2750
-    },
-    description: {
-      overview: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.'
-      ],
-      jobDescription: [
-        'We are now looking for our Head of Growth.',
-        'This position is for you, if you: are excited to bring a new treatments to the world for diseases that affect billions of people worldwide. want to work in the intersection of medical technology, digital health, hardware, psychology and artificial intelligence.',
-        'have a strong passion and integrity for what you do and want to challenge the way we treat mental health problems today. enjoy being one of the first employees in a startup with truly global potential and ambitions, and be a part of shaping the culture and future of the company. are a natural leader that will scale with the organisation as it grows.'
-      ],
-      responsibilities: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-      ],
-      skills: [
-        'creative',
-        'integrity',
-        'intellectual breadth',
-        'ability to admin when wrong',
-        'ability to work in a diverse team',
-        'sense of humor',
-        'emotional openness'
-      ]
-    },
-  },
-  {
-    id: 38,
-    applicationsCount: 72,
-
-    portfolio: 'Ordix',
-    name: 'Software Developer - Robot Systems.',
-    keyWords: ['Internship', 'Paris @agronavo', 'marketing'],
-    category: 'Software',
-    publishDate: 'Dec 27 2022',
-    location: 'Silicon valley - California, USA',
-    skills: {
-      experience: 'Minimum 1 year',
-      workLevel: 'Senior level',
-      employeeType: 'Full time job',
-      offerSalary: 2750
-    },
-    description: {
-      overview: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.'
-      ],
-      jobDescription: [
-        'We are now looking for our Head of Growth.',
-        'This position is for you, if you: are excited to bring a new treatments to the world for diseases that affect billions of people worldwide. want to work in the intersection of medical technology, digital health, hardware, psychology and artificial intelligence.',
-        'have a strong passion and integrity for what you do and want to challenge the way we treat mental health problems today. enjoy being one of the first employees in a startup with truly global potential and ambitions, and be a part of shaping the culture and future of the company. are a natural leader that will scale with the organisation as it grows.'
-      ],
-      responsibilities: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-      ],
-      skills: [
-        'creative',
-        'integrity',
-        'intellectual breadth',
-        'ability to admin when wrong',
-        'ability to work in a diverse team',
-        'sense of humor',
-        'emotional openness'
-      ]
-    },
-  },
-
-  {
-    id: 39,
-    applicationsCount: 72,
-
-    portfolio: 'Kawaski',
-    name: 'Sales intern - right hand to the COO.',
-    keyWords: ['Internship', 'Paris @agronavo', 'marketing'],
-    category: 'Marketing',
-    publishDate: 'Dec 27 2022',
-    location: 'Silicon valley - California, USA',
-    skills: {
-      experience: 'Minimum 1 year',
-      workLevel: 'Senior level',
-      employeeType: 'Full time job',
-      offerSalary: 2750
-    },
-    description: {
-      overview: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.'
-      ],
-      jobDescription: [
-        'We are now looking for our Head of Growth.',
-        'This position is for you, if you: are excited to bring a new treatments to the world for diseases that affect billions of people worldwide. want to work in the intersection of medical technology, digital health, hardware, psychology and artificial intelligence.',
-        'have a strong passion and integrity for what you do and want to challenge the way we treat mental health problems today. enjoy being one of the first employees in a startup with truly global potential and ambitions, and be a part of shaping the culture and future of the company. are a natural leader that will scale with the organisation as it grows.'
-      ],
-      responsibilities: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-      ],
-      skills: [
-        'creative',
-        'integrity',
-        'intellectual breadth',
-        'ability to admin when wrong',
-        'ability to work in a diverse team',
-        'sense of humor',
-        'emotional openness'
-      ]
-    },
-  },
-  {
-    id: 40,
-    applicationsCount: 72,
-
-    portfolio: 'Cypher',
-    name: 'head of growth - medical device startup',
-    keyWords: ['full time', 'remote', 'business develepoment'],
-    category: 'Marketing',
-    publishDate: 'Dec 27 2022',
-    location: 'Silicon valley - California, USA',
-    skills: {
-      experience: 'Minimum 1 year',
-      workLevel: 'Senior level',
-      employeeType: 'Full time job',
-      offerSalary: 2750
-    },
-    description: {
-      overview: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.'
-      ],
-      jobDescription: [
-        'We are now looking for our Head of Growth.',
-        'This position is for you, if you: are excited to bring a new treatments to the world for diseases that affect billions of people worldwide. want to work in the intersection of medical technology, digital health, hardware, psychology and artificial intelligence.',
-        'have a strong passion and integrity for what you do and want to challenge the way we treat mental health problems today. enjoy being one of the first employees in a startup with truly global potential and ambitions, and be a part of shaping the culture and future of the company. are a natural leader that will scale with the organisation as it grows.'
-      ],
-      responsibilities: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-      ],
-      skills: [
-        'creative',
-        'integrity',
-        'intellectual breadth',
-        'ability to admin when wrong',
-        'ability to work in a diverse team',
-        'sense of humor',
-        'emotional openness'
-      ]
-    },
-  },
-  {
-    id: 41,
-    applicationsCount: 72,
-
-    portfolio: 'Ordix',
-    name: 'Software Developer - Robot Systems.',
-    keyWords: ['Internship', 'Paris @agronavo', 'marketing'],
-    category: 'Marketing',
-    publishDate: 'Dec 27 2022',
-    location: 'Silicon valley - California, USA',
-    skills: {
-      experience: 'Minimum 1 year',
-      workLevel: 'Senior level',
-      employeeType: 'Full time job',
-      offerSalary: 2750
-    },
-    description: {
-      overview: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.'
-      ],
-      jobDescription: [
-        'We are now looking for our Head of Growth.',
-        'This position is for you, if you: are excited to bring a new treatments to the world for diseases that affect billions of people worldwide. want to work in the intersection of medical technology, digital health, hardware, psychology and artificial intelligence.',
-        'have a strong passion and integrity for what you do and want to challenge the way we treat mental health problems today. enjoy being one of the first employees in a startup with truly global potential and ambitions, and be a part of shaping the culture and future of the company. are a natural leader that will scale with the organisation as it grows.'
-      ],
-      responsibilities: [
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-        'Deeply understand our customers, our product, and our business strategies. Together with CEO and small team establish strategy and OKRs for all growth marketing programs and monitor investments to deliver improved ROI performance. Owning and driving budgets across the channel mix.',
-      ],
-      skills: [
-        'creative',
-        'integrity',
-        'intellectual breadth',
-        'ability to admin when wrong',
-        'ability to work in a diverse team',
-        'sense of humor',
-        'emotional openness'
-      ]
-    },
+    section: 'Your Rights.',
+    content: [
+      {
+        heading: 'General',
+        text: [
+          'We may collect your personal data from direct and indirect interactions with you to provide our services as agreed by you or to fulfill our contractual obligations with you.',
+          'In this regard we may gather personal data that may include your:',
+          'Name, address, nationality, email address, telephone number, bank account details, job title, name of employer, bank account details, tax ID or your national insurance number, forms of identification.',
+          'We may use this information to:',
+          'Set up meetings with you, maintain a record of your contacts, respond to your enquiries and fulfill your requests, assist you with your transactions or provide you with investor related services.',
+          'The use and processing of your personal data is necessary for our legitimate interests in providing our services, carrying out of administrative duties, the running of our business and in order to make or advise on investment decisions.'
+        ],
+      },
+      {
+        heading: 'Communications And Correspondence',
+        text: [
+          'In the course of communications or correspondence with you we may need to collect your personal data in order to develop our services and offerings and inform our marketing strategy.',
+          'providing our services, administrative purposes, making or advising on investment decisions, performance of contractual relationships, to comply with relevant regulations and laws, tax and compliance obligations including anti money laundering regulations and criminal background checks.',
+          'running our business, administrative purposes, to enable performance of contractual relations, allow us to progress your potential employment or internship job career.'
+        ],
+      },
+    ]
   },
 ]
-
 const initialState = {
   startups: [] as StartupType[],
   investmentPortfolios: [] as InvestmentPortfolioType[],
-  jobs: biba as JobType[]
+  jobs: [] as JobType[],
+  termsAndConditionItems: boba as TermsAndConditionItemType[]
 };
 
 export type StateKeysType = keyof typeof initialState

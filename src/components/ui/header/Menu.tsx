@@ -1,10 +1,10 @@
 import closeIcon from './../../../assets/imgs/ui/header/close.svg';
-import { NavLink } from './NavLink';
 import logo from '../../../assets/imgs/ui/header/logo.svg';
 import spiralAndbluryCircle from '../../../assets/imgs/ui/header/spiralAndbluryCircle.webp';
 import cn from 'classnames';
 import { Separator } from '../Separator';
 import { Spiral } from '../Spiral';
+import { NavLink } from '../NavLink';
 
 type Props = {
   open: boolean
@@ -15,19 +15,19 @@ const links = ['program', 'funding', 'jobs', 'team', 'blog', 'contact'];
 const socialNetworks = [
   {
     name: 'linkedin',
-    href: 'linkedin'
+    href: 'https://www.linkedin.com/',
   },
   {
     name: 'reddit',
-    href: 'reddit'
+    href: 'https://www.reddit.com/',
   },
   {
     name: 'facebook',
-    href: 'facebook'
+    href: 'https://www.facebook.com/',
   },
   {
     name: 'twitter',
-    href: 'twitter'
+    href: 'https://twitter.com/',
   },
 ];
 

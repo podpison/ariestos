@@ -1,26 +1,30 @@
-import { useParams } from "react-router-dom";
-import { selectJobItems } from './../../../redux/selectors';
-import { useSelector } from 'react-redux';
-import { Hero } from "./Hero";
 import { Content } from "./content/Content";
 import { useScrollTop } from "../../../hooks/useScrollTop";
+import { useCurrentJob } from "../../../hooks/useCurrentJob";
+import { NotFoundPage } from './../NotFoundPage';
+import { useSelector } from 'react-redux';
+import { selectJobItems } from './../../../redux/selectors';
+import { HeroBase } from "../../ui/heroBase/HeroBase";
+import heroImg from './../../../assets/imgs/pages/job/hero.webp';
 
 export const JobPage: React.FC = () => {
   useScrollTop();
-  let { id } = useParams();
+  let currentJob = useCurrentJob();
   let jobs = useSelector(selectJobItems);
 
-  let currentJob = jobs.find(j => j.id === Number(id));
-
-  // if (!currentJob && jobs.length !== 0) {
-  //   return <NotFound />
-  // }
+  if (!currentJob) {
+    if (jobs.length !== 0) {
+      return <NotFoundPage />
+    } else {
+      return <main>Loading</main>
+    }
+  }
   if (!currentJob) {
     return <></>
   }
 
   return <main>
-    <Hero />
+    <HeroBase sign="backing founders that build big." src={heroImg} signClassName="max-w-[9em]" />
     <Content {...currentJob} />
   </main>
 };

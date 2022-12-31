@@ -9,6 +9,8 @@ import { Spiral } from '../../../ui/Spiral';
 import spiralImg from './../../../../assets/imgs/pages/job/content/spiral.webp';
 import { LatestJobs } from '../../../ui/latestJobs/LatestJobs';
 import { ContactUs } from '../../../ui/contactUs/ContactUs';
+import { Action } from './Action';
+import { toast } from 'react-toastify';
 
 type Props = {
 
@@ -22,22 +24,23 @@ export const Content: React.FC<Props> = ({ category, portfolio, description, id,
   let daysSign = diffInDays === 0 ? 'today' : diffInDays === 1 ? '1 day ago' : `${diffInDays} days ago`;
   let applicationSign = applicationsCount === 1 ? '1 application' : `${applicationsCount} applications`;
 
+  const handleSaveAction = () => {
+    toast.info('Press ctrl + D if you really want to bookmark this vanacy');
+  };
+  const handleShareAction = () => {
+    navigator.clipboard.writeText(window.location.href).then(function () {
+      toast.success('Link successfully copied to clipboard');
+    }, function (err) {
+      toast.error('Something went wrong');
+    });
+  };
+
   return <section className='mt100to200'>
     <div className='flex justify-between'>
-      <h6 className='h6rules'>{portfolio}</h6>
+      <h6 className=''>{portfolio}</h6>
       <div className='flex gap-x-5'>
-        <h6 className='h6rules flex gap-x-1.5 items-center'>
-          <span>
-            <img src={save} alt='save' />
-          </span>
-          Save
-        </h6>
-        <h6 className='h6rules flex gap-x-1.5 items-center'>
-          <span>
-            <img src={share} alt='share' />
-          </span>
-          Share
-        </h6>
+        <Action onClick={handleSaveAction} src={save} alt='save'>Save</Action>
+        <Action onClick={handleShareAction} src={share} alt='share'>Share</Action>
       </div>
     </div>
     <div className='mt-5'>
@@ -51,7 +54,7 @@ export const Content: React.FC<Props> = ({ category, portfolio, description, id,
         <div className='md:mx-4 lg:mx-16'>
           <Skills {...skills} />
           <Description {...description} />
-          <ArrowLink className='mt-14' to='/'>Apply to job</ArrowLink>
+          <ArrowLink className='mt-14' to='#contactUs' hashLink>Apply to job</ArrowLink>
         </div>
         <Spiral className='w-[165px] h-[600px] -right-5 bottom-[10%] mw:right-0' src={spiralImg} />
       </div>

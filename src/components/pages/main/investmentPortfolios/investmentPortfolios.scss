@@ -1,15 +1,3 @@
-.investment-portfolios__logo_hover {
-  &:hover {
-    &>img {
-      filter: invert(47%) sepia(14%) saturate(1462%) hue-rotate(195deg) brightness(115%) contrast(147%);
-    }
-
-    &>h4 {
-      @apply text-primary;
-    }
-  }
-}
-
 .investment-portfolios__logo {
   &>img {
     filter: invert(47%) sepia(14%) saturate(1462%) hue-rotate(195deg) brightness(115%) contrast(147%);
