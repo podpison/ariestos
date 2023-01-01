@@ -9,7 +9,8 @@ import { NotFoundPage } from "./components/pages/NotFoundPage";
 import { ProgramPage } from "./components/pages/program/ProgramPage";
 import { useStaticItems } from './hooks/useStaticItems';
 import { JobsPage } from "./components/pages/JobsPage";
-import { TermsAndConditionPage } from './components/pages/terms&condition/TermsAndConditionPage';
+import { TermsAndConditionsPage } from './components/pages/terms&condition/TermsAndConditionsPage';
+import { TeamPage } from "./components/pages/team/TeamPage";
 
 function App() {
   useStaticItems('jobs');
@@ -25,7 +26,8 @@ function App() {
       <Route path='/jobs' element={<JobsPage />} />
       <Route path='/jobs/:id' element={<JobPage />} />
       <Route path='/program/:id' element={<ProgramPage />} />
-      <Route path='/terms&condition' element={<TermsAndConditionPage />} />
+      <Route path='/terms&conditions' element={<TermsAndConditionsPage />} />
+      <Route path='/team/:name' element={<TeamPage />} />
       <Route path='*' element={<NotFoundPage />} />
     </Routes>
     <Footer />

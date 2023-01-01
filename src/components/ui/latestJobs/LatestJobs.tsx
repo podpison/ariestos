@@ -6,12 +6,14 @@ import { Categories } from './categories/Categories';
 import { Job } from './Job';
 import { ArrowLink } from './../ArrowLink';
 import { useCurrentJob } from '../../../hooks/useCurrentJob';
+import cn from 'classnames';
 
 type Props = {
   itemsPerPortion?: number
+  mt?: boolean
 }
 
-export const LatestJobs: React.FC<Props> = ({ itemsPerPortion = 3 }) => {
+export const LatestJobs: React.FC<Props> = ({ mt = true, itemsPerPortion = 3 }) => {
   let jobs = useSelector(selectJobItems);
   let [currentCategory, currentPortion] = useSearchParam(['jobCategory', 'jobPortion']);
   const searchParamReplacer = useSearchParamReplacer();
@@ -24,7 +26,7 @@ export const LatestJobs: React.FC<Props> = ({ itemsPerPortion = 3 }) => {
 
   let Jobs = jobsPortion.map((j, index) => <Job {...j} isLast={jobsPortion.length - 1 === index} key={index} />);
 
-  return <div className="mt-24 sm:mt-32 md:mt-40 lg:mt-[200px]">
+  return <section className={cn('', mt && "mt-24 sm:mt-32 md:mt-40 lg:mt-[200px]")}>
     <h1 className='smallh1'>Latest portfolio jobs.</h1>
     <div className="grid grid-cols-1 mt-14 sm:mt-20 md:mt-28 md:grid-cols-[1fr_max-content] md:gap-x-[11%] lg:mt-36">
       <Categories jobs={jobs} />
@@ -39,5 +41,5 @@ export const LatestJobs: React.FC<Props> = ({ itemsPerPortion = 3 }) => {
         </div>
       </div>
     </div>
-  </div>
+  </section>
 };

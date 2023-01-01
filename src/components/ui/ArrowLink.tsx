@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import arrowRightImg from './../../assets/imgs/arrowRight.svg';
 import cn from 'classnames';
-import { HashLink } from 'react-router-hash-link';
+import { HashLink, NavHashLink } from 'react-router-hash-link';
 
 type Props = {
   to?: string
@@ -9,13 +9,30 @@ type Props = {
   className?: string
   primary?: boolean
   hashLink?: boolean
+  navHashLink?: boolean
 }
 
-export const ArrowLink: React.FC<Props> = ({ to, children, className, primary = true, hashLink = false }) => {
+export const ArrowLink: React.FC<Props> = ({ to, children, className, primary = true, hashLink = false, navHashLink = false }) => {
+  const { search } = useLocation();
+
+  if (navHashLink) {
+    return <HashLink
+      to={to || ''}
+      className={cn(
+        "flex items-center gap-x-3 uppercase transition-all",
+        className,
+        search.replaceAll('%20', ' ').includes(to || 'LOREMLOREMLOREM') && 'text-primary',
+        primary && 'text-primary'
+      )}
+    >
+      {children}
+      <img src={arrowRightImg} alt='arrow right' />
+    </HashLink>
+  }
 
   if (hashLink) {
     return <HashLink
-      to={to}
+      to={to || ''}
       className={
         cn(
           "flex items-center gap-x-3 uppercase transition-all",

@@ -1,12 +1,15 @@
 import cn from 'classnames';
 
-type Props = {
+export type TextType = {
   name: string
   items: string[]
-  className?: string
 }
 
-export const Item: React.FC<Props> = ({ name, items, className }) => {
+type Props = {
+  className?: string
+} & TextType
+
+export const Text: React.FC<Props> = ({ name, items, className }) => {
   let Items = items.map((i, index) => {
     return <ul key={index}>
       <li className='text-secondary-title'>{i}</li>

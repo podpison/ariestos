@@ -3,7 +3,7 @@ import save from './../../../../assets/imgs/pages/job/save.svg';
 import share from './../../../../assets/imgs/pages/job/share.svg';
 import { Separator } from '../../../ui/Separator';
 import { Skills } from './skills/Skills';
-import { Description } from './description/Description';
+import { Description } from './Description';
 import { ArrowLink } from '../../../ui/ArrowLink';
 import { Spiral } from '../../../ui/Spiral';
 import spiralImg from './../../../../assets/imgs/pages/job/content/spiral.webp';

@@ -4,5 +4,7 @@ import { useScrollTop } from './../../hooks/useScrollTop';
 export const JobsPage: React.FC = () => {
   useScrollTop();
 
-  return <LatestJobs itemsPerPortion={4} />
+  return <main>
+    <LatestJobs itemsPerPortion={4} mt={false} />
+  </main>
 };

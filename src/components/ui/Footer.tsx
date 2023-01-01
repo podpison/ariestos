@@ -24,7 +24,7 @@ const links = [
   },
   {
     name: 'privacy & policy',
-    link: '/terms&condition',
+    link: '/terms&conditions',
     isAnotherWebsite: false,
   },
 ];
