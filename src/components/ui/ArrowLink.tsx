@@ -1,19 +1,40 @@
 import { Link, useLocation } from "react-router-dom";
 import arrowRightImg from './../../assets/imgs/arrowRight.svg';
 import cn from 'classnames';
-import { HashLink, NavHashLink } from 'react-router-hash-link';
+import { HashLink } from 'react-router-hash-link';
 
 type Props = {
   to?: string
   children: React.ReactNode
   className?: string
   primary?: boolean
+  link?: boolean
   hashLink?: boolean
   navHashLink?: boolean
+  isActiveForced?: boolean
 }
 
-export const ArrowLink: React.FC<Props> = ({ to, children, className, primary = true, hashLink = false, navHashLink = false }) => {
+export const ArrowLink: React.FC<Props> = ({ to, children, className, primary = true, link = false, hashLink = false, navHashLink = false , isActiveForced}) => {
   const { search } = useLocation();
+  let isExist = search.replaceAll('%20', ' ').includes(to || 'LOREMLOREMLOREM');
+
+  if (link) {
+    return <a
+      href={to || ''}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={
+        cn(
+          "flex items-center gap-x-3 uppercase transition-all",
+          className,
+          primary && 'text-primary'
+        )
+      }
+    >
+      {children}
+      <img src={arrowRightImg} alt='arrow right' />
+    </a>
+  }
 
   if (navHashLink) {
     return <HashLink
@@ -21,7 +42,7 @@ export const ArrowLink: React.FC<Props> = ({ to, children, className, primary = 
       className={cn(
         "flex items-center gap-x-3 uppercase transition-all",
         className,
-        search.replaceAll('%20', ' ').includes(to || 'LOREMLOREMLOREM') && 'text-primary',
+        (isExist || isActiveForced) && 'text-primary',
         primary && 'text-primary'
       )}
     >

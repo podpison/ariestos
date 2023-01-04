@@ -13,7 +13,7 @@
 @mixin h6Rules {
   @apply text-sub-title uppercase text-[12px] sm:text-[13px] md:text-[14px] lg:text-[16px]
 }
-@mixin h6Rules {
+@mixin h5Rules {
   @apply text-[14px] sm:text-[16px] md:text-[18px] lg:text-[22px]
 }
 
@@ -71,7 +71,7 @@
     @apply text-[20px] sm:text-[25px] md:text-[30px] lg:text-[36px]
   }
   h5, .h5rules {
-    @include h6Rules
+    @include h5Rules
   }
   h6, .h6rules {
     @include h6Rules;

@@ -11,9 +11,11 @@ import { useStaticItems } from './hooks/useStaticItems';
 import { JobsPage } from "./components/pages/JobsPage";
 import { TermsAndConditionsPage } from './components/pages/terms&condition/TermsAndConditionsPage';
 import { TeamPage } from "./components/pages/team/TeamPage";
+import { TeamRepresentativePage } from "./components/pages/teamRepresentative/TeamRepresentativePage";
 
 function App() {
   useStaticItems('jobs');
+  useStaticItems('investmentPortfolios')
 
   return <div className="relative container flex flex-col h-full max-w-[1160px]">
     <ToastContainer 
@@ -28,6 +30,7 @@ function App() {
       <Route path='/program/:id' element={<ProgramPage />} />
       <Route path='/terms&conditions' element={<TermsAndConditionsPage />} />
       <Route path='/team/:name' element={<TeamPage />} />
+      <Route path='/team/:name/:representativeName' element={<TeamRepresentativePage />} />
       <Route path='*' element={<NotFoundPage />} />
     </Routes>
     <Footer />

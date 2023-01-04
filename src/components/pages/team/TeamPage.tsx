@@ -1,6 +1,12 @@
 import { selectInvestmetPortfolioItems } from "../../../redux/selectors";
 import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
+import { NotFoundPage } from "../NotFoundPage";
+import { HeroBase } from './../../ui/heroBase/HeroBase';
+import heroImg from './../../../assets/imgs/pages/team/hero.webp';
+import { Description } from "./Description";
+import { Employees } from "./employees/Employees";
+import { ContactUs } from "../../ui/contactUs/ContactUs";
 
 export const TeamPage: React.FC = () => {
   let portfolios = useSelector(selectInvestmetPortfolioItems);
@@ -8,7 +14,14 @@ export const TeamPage: React.FC = () => {
 
   let currentPortfolio = portfolios.find(p => p.name === name);
 
-  return <main>
+  if (!currentPortfolio) {
+    return <NotFoundPage />
+  }
 
+  return <main>
+    <HeroBase signClassName='max-w-[10em]' sign={currentPortfolio.description.heading} src={heroImg} />
+    <Description name={currentPortfolio.name} description={currentPortfolio.description.description} />
+    <Employees items={currentPortfolio.team} />
+    <ContactUs />
   </main>
 };

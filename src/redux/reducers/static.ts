@@ -11,31 +11,22 @@ export type StartupType = {
   rtl: boolean //right to left
 }
 
+export type InvestmentPortfolioTeamItemType = {
+  src: string
+  role: string
+  name: string
+  linkedin: string
+  description: string[]
+}
+
 export type InvestmentPortfolioType = {
-  name: string;
-  icon: string;
+  name: string
+  icon: string
   description: {
-    heading: string;
-    description: string;
+    heading: string
+    description: string
   };
-  team: {
-    leader: {
-      src: string;
-      name: string;
-    };
-    co: {
-      src: string;
-      name: string;
-    };
-    marketing: {
-      src: string;
-      name: string;
-    };
-    technician: {
-      src: string;
-      name: string;
-    };
-  };
+  team: InvestmentPortfolioTeamItemType[]
 }
 
 export type JobType = {
