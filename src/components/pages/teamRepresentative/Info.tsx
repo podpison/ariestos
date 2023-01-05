@@ -3,6 +3,7 @@ import { ArrowLink } from "../../ui/ArrowLink";
 import { Separator } from "../../ui/Separator";
 import { Spiral } from './../../ui/Spiral';
 import spiralImg from './../../../assets/imgs/pages/teamRepresentative/spiral.webp';
+import { GoBack } from "../../ui/GoBack";
 
 type Props = {
   teamName: string
@@ -12,8 +13,8 @@ export const Info: React.FC<Props> = ({ teamName, name, description, role, src, 
   let Texts = description.map((i, index) => <p key={index}>{i}</p>);
 
   return <section className="mt100to200">
-    <ArrowLink className='flex-row-reverse justify-end w-fit [&>img]:rotate-180' to={`/team/${teamName}`}>Go back</ArrowLink>
-    <div className="grid grid-cols-1 mt-8 md:grid-cols-2 md:gap-x-[8%] md:items-center">
+    <GoBack to={`/team/${teamName}`} />
+    <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-[8%] md:items-center">
       <div className="relative grid items-center grid-cols-[2fr_3fr] gap-5 bg-shape p-5 max-md:mb-14 md:pb-10 md:grid-cols-1 md:pt-40 lg:pt-52">
         <Spiral className="w-full top-0 z-10 max-md:hidden" src={spiralImg} />
         <img className="w-full" src={src} alt={`${name} - ${role}`} />

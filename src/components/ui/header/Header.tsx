@@ -29,6 +29,7 @@ export const Header: React.FC = () => {
         <img className='w-5 md:w-3' src={menuIcon} alt='menu' />
       </div>
       <Menu open={isMenuOpen} onClose={handleMenuStatus} />
+      {isMenuOpen && <div className='absolute bg-black/60 z-30 w-[10000vw] h-[10000vw] -left-[1000px] -top-[1000px]' onClick={handleMenuStatus} />}
     </div>
   </header>
 };

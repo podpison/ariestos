@@ -2,6 +2,11 @@ import { createReducer, createAction, createAsyncThunk } from "@reduxjs/toolkit"
 import { DocumentData } from "firebase/firestore";
 import { itemsAPI } from "../../api";
 
+export type TextType = {
+  name: string
+  items: string[]
+}
+
 export type StartupType = {
   mainImg: string
   smallImg: string
@@ -9,6 +14,13 @@ export type StartupType = {
   heading: string
   description: string
   rtl: boolean //right to left
+  year: number
+  shortDescription: string
+  category: string
+  content: {
+    texts: (TextType | string)[]
+    website: string
+  }
 }
 
 export type InvestmentPortfolioTeamItemType = {

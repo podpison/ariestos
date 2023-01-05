@@ -18,7 +18,7 @@ export const Item: React.FC<Props> = ({ description, heading, mainImg, name, sma
         <h3>{heading}</h3>
         <p>{description}</p>
       </article>
-      <ArrowLink className='mt-10' to={`/startups/${name}`}>View project</ArrowLink>
+      <ArrowLink className='mt-10' to={`/funding/${name}`}>View project</ArrowLink>
     </div>
   </div>
 };

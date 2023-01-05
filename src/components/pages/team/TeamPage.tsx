@@ -7,8 +7,10 @@ import heroImg from './../../../assets/imgs/pages/team/hero.webp';
 import { Description } from "./Description";
 import { Employees } from "./employees/Employees";
 import { ContactUs } from "../../ui/contactUs/ContactUs";
+import { useScrollTop } from './../../../hooks/useScrollTop';
 
 export const TeamPage: React.FC = () => {
+  useScrollTop();
   let portfolios = useSelector(selectInvestmetPortfolioItems);
   let { name } = useParams();
 

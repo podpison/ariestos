@@ -1,32 +1,18 @@
-import { InvestmentPortfolioType } from '../../../../../redux/reducers/static';
+import { InvestmentPortfolioTeamItemType } from '../../../../../redux/reducers/static';
 import cn from 'classnames';
 
 type Props = {
-  role: keyof InvestmentPortfolioType['team']
+  role: string
   className?: string
-} & InvestmentPortfolioType['team']['leader']
+  representatives: InvestmentPortfolioTeamItemType[]
+}
 
-export const TeamRepresentative: React.FC<Props> = ({ role, name, src, className }) => {
-  let formattedRole = ''
-
-  switch (role) {
-    case 'co':
-      formattedRole = 'Co - leader'
-      break;
-    case 'leader':
-      formattedRole = 'Leader'
-      break;
-    case 'marketing':
-      formattedRole = 'Lead marketing'
-      break;
-    case 'technician':
-      formattedRole = 'Lead technician'
-      break;
-  }
+export const TeamRepresentative: React.FC<Props> = ({ role, representatives, className }) => {
+  let currentRepresentative = representatives.find(r => r.role === role);
 
   return <div className={cn('flex flex-col items-center even:mt-7 md:even:-mt-10 lg:even:-mt-20', className)}>
-    <img src={src} alt={formattedRole} />
-    <h4 className='smallh4 mt-5 text-center'>{name}</h4>
-    <p className='mt-2.5'>{formattedRole}</p>
+    <img src={currentRepresentative?.src} alt={`${currentRepresentative?.name} - ${currentRepresentative?.role}`} />
+    <h4 className='smallh4 mt-5 text-center'>{currentRepresentative?.name}</h4>
+    <p className='mt-2.5'>{role}</p>
   </div>
 };

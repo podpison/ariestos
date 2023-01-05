@@ -25,7 +25,7 @@ export const ArrowLink: React.FC<Props> = ({ to, children, className, primary = 
       rel="noopener noreferrer"
       className={
         cn(
-          "flex items-center gap-x-3 uppercase transition-all",
+          "flex items-center gap-x-3 uppercase transition-all w-fit",
           className,
           primary && 'text-primary'
         )
@@ -40,7 +40,7 @@ export const ArrowLink: React.FC<Props> = ({ to, children, className, primary = 
     return <HashLink
       to={to || ''}
       className={cn(
-        "flex items-center gap-x-3 uppercase transition-all",
+        "flex items-center gap-x-3 uppercase transition-all w-fit",
         className,
         (isExist || isActiveForced) && 'text-primary',
         primary && 'text-primary'
@@ -56,7 +56,7 @@ export const ArrowLink: React.FC<Props> = ({ to, children, className, primary = 
       to={to || ''}
       className={
         cn(
-          "flex items-center gap-x-3 uppercase transition-all",
+          "flex items-center gap-x-3 uppercase transition-all w-fit",
           className,
           primary && 'text-primary'
         )
@@ -71,7 +71,7 @@ export const ArrowLink: React.FC<Props> = ({ to, children, className, primary = 
     return <p
       className={
         cn(
-          "flex items-center gap-x-3 uppercase transition-all",
+          "flex items-center gap-x-3 uppercase transition-all w-fit",
           className,
           primary && 'text-primary'
         )
@@ -85,7 +85,7 @@ export const ArrowLink: React.FC<Props> = ({ to, children, className, primary = 
   return <Link
     className={
       cn(
-        "flex items-center gap-x-3 uppercase transition-all",
+        "flex items-center gap-x-3 uppercase transition-all w-fit",
         className,
         primary && 'text-primary'
       )

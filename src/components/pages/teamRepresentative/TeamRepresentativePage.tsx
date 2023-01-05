@@ -6,8 +6,10 @@ import { selectInvestmetPortfolioItems } from '../../../redux/selectors';
 import { NotFoundPage } from './../NotFoundPage';
 import { Info } from './Info';
 import { ContactUs } from '../../ui/contactUs/ContactUs';
+import { useScrollTop } from './../../../hooks/useScrollTop';
 
 export const TeamRepresentativePage: React.FC = () => {
+  useScrollTop();
   let portfolios = useSelector(selectInvestmetPortfolioItems);
   const { name, representativeName } = useParams();
 

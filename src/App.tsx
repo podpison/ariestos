@@ -12,10 +12,12 @@ import { JobsPage } from "./components/pages/JobsPage";
 import { TermsAndConditionsPage } from './components/pages/terms&condition/TermsAndConditionsPage';
 import { TeamPage } from "./components/pages/team/TeamPage";
 import { TeamRepresentativePage } from "./components/pages/teamRepresentative/TeamRepresentativePage";
+import { FundingPage } from './components/pages/funding/FundingPage';
 
 function App() {
   useStaticItems('jobs');
   useStaticItems('investmentPortfolios')
+  useStaticItems('startups');
 
   return <div className="relative container flex flex-col h-full max-w-[1160px]">
     <ToastContainer 
@@ -25,6 +27,7 @@ function App() {
     <Header />
     <Routes>
       <Route path='/' element={<MainPage />} />
+      <Route path='/funding/:name' element={<FundingPage />} />
       <Route path='/jobs' element={<JobsPage />} />
       <Route path='/jobs/:id' element={<JobPage />} />
       <Route path='/program/:id' element={<ProgramPage />} />
