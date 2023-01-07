@@ -32,12 +32,12 @@ const links = [
 export const Footer: React.FC = () => {
   let Links = links.map((l, index) => {
     if (l.isAnotherWebsite) {
-      return <a className="primary-hover" href={l.link} target="_blank" rel="noopener noreferrer" key={index}>
-        <h6>{l.name}</h6>
+      return <a href={l.link} target="_blank" rel="noopener noreferrer" key={index}>
+        <h6 className="primary-hover">{l.name}</h6>
       </a>
     } else {
-      return <NavLink className="primary-hover md:last:ml-auto" to={l.link} key={index}>
-        <h6>{l.name}</h6>
+      return <NavLink className="md:last:ml-auto" to={l.link} key={index}>
+        <h6 className="primary-hover">{l.name}</h6>
       </NavLink>
     }
   });

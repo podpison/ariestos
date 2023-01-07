@@ -18,7 +18,7 @@ export const Program: React.FC = () => {
     <div className='relative flex flex-col gap-y-7 mt-10 z-10 sm:gap-y-10 md:-mt-[150px] md:gap-y-13 md:max-w-[560px] md:gap-y-16 lg:-mt-[175px]'>
       <h2>building faster, smarter,together.</h2>
       <p>ARIES is a part of PIXIRHY, a global venture capital firm providing multi stage investment to develop and scale our founders’ big ideas. SOSV invests in every HAX program startup with follow-on through pre-iPO.</p>
-      <ArrowLink to='/somewhere'>View programm</ArrowLink>
+      <ArrowLink to='/program'>View programm</ArrowLink>
     </div>
   </section>
 };

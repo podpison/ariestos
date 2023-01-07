@@ -33,6 +33,9 @@
   .angular-gradient-text {
     @include gradientText(conic-gradient(from 180deg at 50% 50%, #66FFE6 -160.13deg, #8093FF 42.37deg, #66FFE6 199.87deg, #8093FF 402.37deg));
   }
+  .liner-agadint-bg {
+    background: conic-gradient(from 180deg at 50% 50%, #66FFE6 -160.13deg, #8093FF 42.37deg, #66FFE6 199.87deg, #8093FF 402.37deg);
+  }
 
   html {
     font-family: gilroy;

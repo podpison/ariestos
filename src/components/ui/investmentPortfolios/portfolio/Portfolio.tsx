@@ -1,9 +1,9 @@
-import { selectInvestmetPortfolioItems } from "../../../../../redux/selectors";
 import { useSelector } from 'react-redux';
 import { useSearchParams } from "react-router-dom";
 import { TeamRepresentative } from "./TeamRepresentative";
 import { ShortDescription } from "./ShortDescription";
-import { Separator } from './../../../../ui/Separator';
+import { selectInvestmetPortfolioItems } from '../../../../redux/selectors';
+import { Separator } from './../../Separator';
 
 export const Portfolio: React.FC = () => {
   let items = useSelector(selectInvestmetPortfolioItems);

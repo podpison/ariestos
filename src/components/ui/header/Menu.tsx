@@ -33,9 +33,9 @@ const socialNetworks = [
 
 export const Menu: React.FC<Props> = ({ open, onClose }) => {
   const Links = links.map((l, index) => {
-    return <NavLink onClick={onClose} to={l} key={index}>
-      <h2 className='capitalize text-sub-title'>{l}</h2>
-    </NavLink>
+    return <h2 className='capitalize text-sub-title' key={index}>
+      <NavLink onClick={onClose} to={l}>{l}</NavLink>
+    </h2>
   })
   const SocialNetworks = socialNetworks.map((sn, index) => <a className='uppercase text-secondary-title transition-colors hover:text-primary' href={sn.href} key={index}>{sn.name}</a>)
 

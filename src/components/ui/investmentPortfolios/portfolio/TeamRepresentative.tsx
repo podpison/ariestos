@@ -1,5 +1,5 @@
-import { InvestmentPortfolioTeamItemType } from '../../../../../redux/reducers/static';
 import cn from 'classnames';
+import { InvestmentPortfolioTeamItemType } from '../../../../redux/reducers/static';
 
 type Props = {
   role: string

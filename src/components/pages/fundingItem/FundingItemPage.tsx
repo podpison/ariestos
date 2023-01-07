@@ -1,14 +1,14 @@
 import { HeroBase } from "../../ui/heroBase/HeroBase";
 import { Description } from "./Description";
 import { ContactUs } from "../../ui/contactUs/ContactUs";
-import { useScrollTop } from './../../../hooks/useScrollTop';
+import { useScrollTop } from '../../../hooks/useScrollTop';
 import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { selectStartupItems } from './../../../redux/selectors';
-import { NotFoundPage } from './../NotFoundPage';
+import { selectStartupItems } from '../../../redux/selectors';
+import { NotFoundPage } from '../NotFoundPage';
 import { Startups } from "../../ui/startups/Startups";
 
-export const FundingPage: React.FC = () => {
+export const FundingItemPage: React.FC = () => {
   useScrollTop();
   let startups = useSelector(selectStartupItems);
   let { name } = useParams();

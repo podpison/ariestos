@@ -1,7 +1,6 @@
 import { initializeApp } from "firebase/app";
 import { addDoc, collection, collection as fbCollection, getDocs, getFirestore } from "firebase/firestore";
 import { ContactUsFormValuesType } from "./components/ui/contactUs/form/Form";
-// import { ContactUsFormValuesType } from "./components/pages/contactUs/ContactUsForm/ContactUsForm";
 
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
@@ -15,7 +14,6 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const fs = getFirestore(app);
-
 
 export const itemsAPI = {
   get: async (collection: string) => {

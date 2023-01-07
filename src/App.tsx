@@ -10,9 +10,12 @@ import { ProgramPage } from "./components/pages/program/ProgramPage";
 import { useStaticItems } from './hooks/useStaticItems';
 import { JobsPage } from "./components/pages/JobsPage";
 import { TermsAndConditionsPage } from './components/pages/terms&condition/TermsAndConditionsPage';
-import { TeamPage } from "./components/pages/team/TeamPage";
+import { TeamItemPage } from "./components/pages/teamItem/TeamItemPage";
 import { TeamRepresentativePage } from "./components/pages/teamRepresentative/TeamRepresentativePage";
-import { FundingPage } from './components/pages/funding/FundingPage';
+import { FundingItemPage } from './components/pages/fundingItem/FundingItemPage';
+import { FundingPage } from './components/pages/FundingPage';
+import { ContactPage } from "./components/pages/Contact";
+import { TeamPage } from './components/pages/TeamPage';
 
 function App() {
   useStaticItems('jobs');
@@ -27,12 +30,15 @@ function App() {
     <Header />
     <Routes>
       <Route path='/' element={<MainPage />} />
-      <Route path='/funding/:name' element={<FundingPage />} />
+      <Route path='/funding' element={<FundingPage />} />
+      <Route path='/funding/:name' element={<FundingItemPage />} />
       <Route path='/jobs' element={<JobsPage />} />
       <Route path='/jobs/:id' element={<JobPage />} />
-      <Route path='/program/:id' element={<ProgramPage />} />
+      <Route path='/program' element={<ProgramPage />} />
+      <Route path='/contact' element={<ContactPage />} />
       <Route path='/terms&conditions' element={<TermsAndConditionsPage />} />
-      <Route path='/team/:name' element={<TeamPage />} />
+      <Route path='/team' element={<TeamPage />} />
+      <Route path='/team/:name' element={<TeamItemPage />} />
       <Route path='/team/:name/:representativeName' element={<TeamRepresentativePage />} />
       <Route path='*' element={<NotFoundPage />} />
     </Routes>
