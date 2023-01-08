@@ -7,7 +7,7 @@ import { Description } from './Description';
 import { ArrowLink } from '../../../ui/ArrowLink';
 import { Spiral } from '../../../ui/Spiral';
 import spiralImg from './../../../../assets/imgs/pages/job/content/spiral.webp';
-import { LatestJobs } from '../../../ui/latestJobs/LatestJobs';
+import { LatestJobs } from '../../../ui/LatestJobs';
 import { ContactUs } from '../../../ui/contactUs/ContactUs';
 import { Action } from './Action';
 import { toast } from 'react-toastify';

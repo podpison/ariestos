@@ -9,14 +9,14 @@ type Props = {
 }
 
 export const Item: React.FC<Props> = ({ isFirst, name }) => {
-  let [ currentCategory ] = useSearchParam('jobCategory')
+  let [ currentCategory, carouselPortion ] = useSearchParam(['carouselCategory', 'carouselPortion'])
   const searchParamReplacer = useSearchParamReplacer();
 
   let isActive = (currentCategory === name) || (isFirst && !currentCategory)
 
   return <ArrowLink
     className={cn(`justify-between text-[20px] transition-colors hover:text-primary sm:text-[22px] ginora ${isActive && 'text-primary'}`)}
-    to={searchParamReplacer(`?jobCategory=${name}`)}
+    to={searchParamReplacer([`?carouselCategory=${name}`, 'carouselPortion=1'])}
     primary={false}
   >
     {name}

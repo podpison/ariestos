@@ -1,17 +1,16 @@
 import { useSelector } from 'react-redux';
-import { useSearchParams } from "react-router-dom";
 import { TeamRepresentative } from "./TeamRepresentative";
 import { ShortDescription } from "./ShortDescription";
 import { selectInvestmetPortfolioItems } from '../../../../redux/selectors';
 import { Separator } from './../../Separator';
+import { useSearchParam } from '../../../../hooks/useSearchParam';
 
 export const Portfolio: React.FC = () => {
   let items = useSelector(selectInvestmetPortfolioItems);
-  const [searchParams, setSearchParams] = useSearchParams();
 
-  let portfolioSearchParam = searchParams.get('portfolio');
+  let [portfolioSearchParam] = useSearchParam('portfolio');
   let currentPortfolio = items.find(i => i.name === portfolioSearchParam)
-  
+
   if (!currentPortfolio) {
     if (items.length === 0) {
       return <></>

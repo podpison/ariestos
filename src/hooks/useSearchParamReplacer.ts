@@ -10,12 +10,13 @@ const getSearchParamName = (param: string) => {
 export const useSearchParamReplacer = () => {
   const { search } = useLocation();
 
-  return (newParam: string) => {
-
+  return (newParam: string | string[]) => {
     let splitedSearch = search.split('?').slice(1);
-    let searchWithoutOldParam = splitedSearch.filter(p => !getSearchParamName(p).includes(getSearchParamName(newParam)))
+    let newParamsInArray = typeof newParam === 'string' ? [newParam] : newParam;
+
+    let searchWithoutOldParam = splitedSearch.filter(p => !newParamsInArray.some(np => getSearchParamName(np) === getSearchParamName(p)));
     let otherParams = searchWithoutOldParam.length === 0 ? searchWithoutOldParam.join('?') : ('?' + searchWithoutOldParam.join('?'));
 
-    return otherParams.concat(newParam);
+    return otherParams.concat(newParamsInArray.join('?'));
   }
 }
