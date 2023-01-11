@@ -4,6 +4,7 @@ import { ShortDescription } from "./ShortDescription";
 import { selectInvestmetPortfolioItems } from '../../../../redux/selectors';
 import { Separator } from './../../Separator';
 import { useSearchParam } from '../../../../hooks/useSearchParam';
+import { Skeleton } from '../../Skeleton';
 
 export const Portfolio: React.FC = () => {
   let items = useSelector(selectInvestmetPortfolioItems);
@@ -13,7 +14,7 @@ export const Portfolio: React.FC = () => {
 
   if (!currentPortfolio) {
     if (items.length === 0) {
-      return <></>
+      return <Skeleton className='-mt-12 h-[500px]' count={1} items={[]} />
     }
     currentPortfolio = items[0];
   }

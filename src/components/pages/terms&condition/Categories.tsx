@@ -1,6 +1,7 @@
 import { TermsAndConditionItemType } from "../../../redux/reducers/static";
 import { ArrowLink } from './../../ui/ArrowLink';
 import { useLocation } from 'react-router-dom';
+import { Skeleton } from './../../ui/Skeleton';
 
 type Props = {
   items: TermsAndConditionItemType[]
@@ -25,6 +26,6 @@ export const Categories: React.FC<Props> = ({ items }) => {
   })
 
   return <div className="flex flex-col gap-y-5 sm:gap-8 md:gap-y-10 md:bg-shape md:py-12 md:px-5 lg:py-20 lg:px-14 lg:gap-14">
-    {Items}
+    <Skeleton className='h-[50px]' count={5} items={Items} />
   </div>
 };

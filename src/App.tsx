@@ -17,6 +17,7 @@ import { FundingPage } from './components/pages/FundingPage';
 import { ContactPage } from "./components/pages/Contact";
 import { TeamPage } from './components/pages/TeamPage';
 import { BlogPage } from "./components/pages/blog/BlogPage";
+import { BlogItemPage } from "./components/pages/blogItem/BlogItemPage";
 
 function App() {
   useStaticItems('jobs');
@@ -38,6 +39,7 @@ function App() {
       <Route path='/program' element={<ProgramPage />} />
       <Route path='/contact' element={<ContactPage />} />
       <Route path='/blog' element={<BlogPage />} />
+      <Route path='/blog/:categoryId/:itemId' element={<BlogItemPage />} />
       <Route path='/terms&conditions' element={<TermsAndConditionsPage />} />
       <Route path='/team' element={<TeamPage />} />
       <Route path='/team/:name' element={<TeamItemPage />} />

@@ -13,10 +13,11 @@ export const Item: React.FC<Props> = ({ isFirst, name }) => {
   const searchParamReplacer = useSearchParamReplacer();
 
   let isActive = (currentCategory === name) || (isFirst && !currentCategory)
+  let searchData = carouselPortion ? [`?carouselCategory=${name}`, 'carouselPortion=1'] : [`?carouselCategory=${name}`];
 
   return <ArrowLink
     className={cn(`justify-between text-[20px] transition-colors hover:text-primary sm:text-[22px] ginora ${isActive && 'text-primary'}`)}
-    to={searchParamReplacer([`?carouselCategory=${name}`, 'carouselPortion=1'])}
+    to={searchParamReplacer(searchData)}
     primary={false}
   >
     {name}

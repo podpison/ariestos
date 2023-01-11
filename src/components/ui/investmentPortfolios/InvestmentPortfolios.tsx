@@ -3,6 +3,7 @@ import { PortfolioLogos } from "./PortfolioLogos";
 import './investmentPortfolios.scss';
 import cn from 'classnames';
 import { Separator } from './../Separator';
+import { Skeleton } from "../Skeleton";
 
 type Props = {
   mt?: boolean

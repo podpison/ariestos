@@ -4,6 +4,7 @@ import cn from 'classnames';
 import { useSearchParamReplacer } from '../../../hooks/useSearchParamReplacer';
 import { selectInvestmetPortfolioItems } from '../../../redux/selectors';
 import { useSearchParam } from './../../../hooks/useSearchParam';
+import { Skeleton } from '../Skeleton';
 
 export const PortfolioLogos: React.FC = () => {
   const searchParamReplacer = useSearchParamReplacer();
@@ -20,6 +21,6 @@ export const PortfolioLogos: React.FC = () => {
   })
 
   return <div className="grid grid-cols-2 gap-y-10 mt-14 pb-24 sm:grid-cols-3 sm:pb-36 md:grid-cols-4 md:pb-52 lg:pb-[250px]">
-    {Logos}
+    <Skeleton count={4} items={Logos} className='h-[50px] mr-5' />
   </div>
 };

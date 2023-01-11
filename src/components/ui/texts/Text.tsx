@@ -12,19 +12,27 @@ const isTextStringGuardian = (text: TextType | string): text is TextType => {
 
 export const Text: React.FC<Props> = ({ text, className }) => {
   if (!isTextStringGuardian(text)) {
-    return <p className={cn('text-secondary-title', className)}>{text}</p>
+    let mainText = text;
+    let selectedText = '';
+
+    if (text.includes('**')) {
+      let splitedText = text.split('**');
+      mainText = splitedText[0];
+      selectedText = splitedText[1];
+    };
+
+    return <p className={cn('text-secondary-title', className)}>
+      {mainText}
+      {selectedText && <span className='text-white'>{selectedText}</span>}
+    </p>
   }
 
-  let Items = text.items.map((i, index) => {
-    return <ul key={index}>
-      <li className='text-secondary-title'>{i}</li>
-    </ul>
-  });
+  let Items = text.items.map((i, index) => <li className='text-secondary-title' key={index}>{i}</li>);
 
   return <div>
     <h6 className='h6rules text-sub-title'>{text.name}</h6>
-    <div className={cn("flex flex-col gap-y-5 mt-5", className)}>
+    <ul className={cn("flex flex-col gap-y-5 mt-5", className)}>
       {Items}
-    </div>
+    </ul>
   </div>
 };

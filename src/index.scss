@@ -104,6 +104,9 @@
   .mt100to200 {
     @apply mt-24 sm:mt-32 md:mt-40 lg:mt-[200px]
   }
+  .skeleton {
+    @apply bg-gray-300 rounded-lg animate-pulse dark:bg-gray-700
+  }
 }
 
 @font-face {
