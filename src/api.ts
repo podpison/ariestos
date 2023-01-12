@@ -3,13 +3,13 @@ import { addDoc, collection, collection as fbCollection, getDocs, getFirestore }
 import { ContactUsFormValuesType } from "./components/ui/contactUs/form/Form";
 
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
-  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
-  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
-  appId: import.meta.env.VITE_FIREBASE_APP_ID,
-  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
+  apiKey: 'AIzaSyBCoyY-OhJUimJaucRJs4mpHiodcbTYBCU',
+  authDomain: 'ariestos-daa83.firebaseapp.com',
+  projectId: 'ariestos-daa83',
+  storageBucket: 'ariestos-daa83.appspot.com',
+  messagingSenderId: '444829018738',
+  appId: '1:444829018738:web:f6a767da32808ec27030eb',
+  measurementId: 'G-2ZKD8W2W7M'
 };
 
 const app = initializeApp(firebaseConfig);
@@ -26,14 +26,5 @@ export const customersAPI = {
   add: async (data: ContactUsFormValuesType) => {
     const docRef = await addDoc(collection(fs, "contactUs"), data);
     return !!docRef;
-  }
-}
-
-export const addAPI = {
-  add: async (collectionName: string, data: any[]) => {
-    for (let item of data) {
-      const docRef = await addDoc(collection(fs, collectionName), item);
-      console.log(docRef)
-    }
   }
 }

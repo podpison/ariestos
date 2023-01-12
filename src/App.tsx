@@ -23,7 +23,6 @@ function App() {
   useStaticItems('jobs');
   useStaticItems('investmentPortfolios')
   useStaticItems('startups');
-
   return <div className="relative container flex flex-col h-full max-w-[1160px]">
     <ToastContainer 
       position="bottom-right"
