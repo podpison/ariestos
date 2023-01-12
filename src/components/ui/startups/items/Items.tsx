@@ -23,10 +23,9 @@ export const Items: React.FC<Props> = ({ startups, category, currentStartup }) =
   let currentPortion = startupPortion;
 
   const searchParamReplacer = useSearchParamReplacer();
-  const [items, setItems] = useState(startups);
   const navigate = useNavigate();
 
-  let categoryItems = items.filter(s => s.category === (category || currentStartup?.category));
+  let categoryItems = startups.filter(s => s.category === (category || currentStartup?.category) && s.name !== currentStartup?.name);
 
   let numberCurrentPortion = Number(currentPortion) || 1;
   let itemsPortion = categoryItems.slice((numberCurrentPortion - 1) * itemsPerPortion, numberCurrentPortion * itemsPerPortion)
@@ -35,17 +34,14 @@ export const Items: React.FC<Props> = ({ startups, category, currentStartup }) =
   let isMaxPortion = numberCurrentPortion === maxPortion;
 
   useEffect(() => {
-    if (items.length === 0) return;
+    if (startups.length === 0) return;
 
-    if (category && items.length === 0) {
+    if (category && categoryItems.length === 0) {
       let replacedSearch = searchParamReplacer([`startupCategory=${startups[0].category}`, `startupPortion=1`]);
-      console.log(replacedSearch)
       navigate(replacedSearch);
     } else if (numberCurrentPortion > maxPortion || (currentPortion !== undefined && isNaN(Number(currentPortion)))) {
       let replacedSearch = searchParamReplacer(`startupPortion=1`);
       navigate(replacedSearch);
-    } else {
-      setItems(itemsPortion);
     }
   }, [currentPortion, category, startups]);
 

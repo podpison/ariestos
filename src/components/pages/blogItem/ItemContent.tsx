@@ -1,14 +1,17 @@
 import { BlogItemType } from "../../../redux/reducers/static";
 import { GoBack } from "../../ui/GoBack";
 import { Separator } from "../../ui/Separator";
+import { Spiral } from "../../ui/Spiral";
 import { Texts } from "../../ui/texts/Texts";
+import spiral1Img from './../../../assets/imgs/pages/blogItem/spiral1.webp';
+import spiral2Img from './../../../assets/imgs/pages/blogItem/spiral2.webp';
 
 type Props = {
 
 } & BlogItemType
 
 export const ItemContent: React.FC<Props> = ({ content, author, date, name, preview }) => {
-  return <section className="mt100to200">
+  return <section className="mt100to200 relative">
     <GoBack to="/blog" />
     <div>
       <h2>{name}</h2>
@@ -28,6 +31,8 @@ export const ItemContent: React.FC<Props> = ({ content, author, date, name, prev
         </div>
       </div>
       <h4 className="mt-10 sm:mt-14 md:mt-20 lg:mt-28">{date}</h4>
+      <Spiral className="-right-5 top-[50%] w-[120px] h-[400px] mw:right-0" src={spiral1Img} />
+      <Spiral className="-left-5 bottom-0 w-[120px] h-[400px] mw:left-0" src={spiral2Img} />
       <Texts className="mt-5 gap-y-5 md:mt-[30px]" items={content} />
     </div>
   </section>
